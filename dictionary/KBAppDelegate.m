@@ -7,6 +7,8 @@
 //
 
 #import "KBAppDelegate.h"
+#import "KBNavController.h"
+#import "KBSearchController.h"
 
 @implementation KBAppDelegate
 
@@ -14,6 +16,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    KBNavController *navController = [[KBNavController alloc] initWithRootViewController:[[KBSearchController alloc]init]];
+    [self.window setRootViewController:navController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
