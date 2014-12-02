@@ -23,7 +23,6 @@
 		F5B578891A2E55C200207322 /* KBSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578871A2E55C200207322 /* KBSearchController.m */; };
 		F5B5788A1A2E55C200207322 /* KBSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578881A2E55C200207322 /* KBSearchController.xib */; };
 		F5B5788F1A2E594000207322 /* KBNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5788E1A2E594000207322 /* KBNavController.m */; };
-		F5B578931A2E5AAB00207322 /* KBStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578921A2E5AAB00207322 /* KBStyleManager.m */; };
 		F5B578981A2E681500207322 /* KBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578971A2E681500207322 /* KBViewController.m */; };
 		F5B578A51A2E701800207322 /* book-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B5789B1A2E701800207322 /* book-empty.png */; };
 		F5B578A61A2E701800207322 /* book-empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B5789C1A2E701800207322 /* book-empty@2x.png */; };
@@ -35,6 +34,7 @@
 		F5B578AC1A2E701800207322 /* magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A21A2E701800207322 /* magnify@2x.png */; };
 		F5B578AD1A2E701800207322 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A31A2E701800207322 /* settings.png */; };
 		F5B578AE1A2E701800207322 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A41A2E701800207322 /* settings@2x.png */; };
+		F5B578B11A2E70E300207322 /* KBStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578B01A2E70E300207322 /* KBStyleManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,15 +67,13 @@
 		F5715C171A2E52D800610F8A /* dictionaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dictionaryTests-Info.plist"; sourceTree = "<group>"; };
 		F5715C191A2E52D800610F8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5715C1B1A2E52D800610F8A /* dictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dictionaryTests.m; sourceTree = "<group>"; };
-		F5B578861A2E55C200207322 /* KBSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSearchController.h; sourceTree = "<group>"; };
-		F5B578871A2E55C200207322 /* KBSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSearchController.m; sourceTree = "<group>"; };
-		F5B578881A2E55C200207322 /* KBSearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBSearchController.xib; sourceTree = "<group>"; };
-		F5B5788D1A2E594000207322 /* KBNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNavController.h; sourceTree = "<group>"; };
-		F5B5788E1A2E594000207322 /* KBNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNavController.m; sourceTree = "<group>"; };
-		F5B578911A2E5AAB00207322 /* KBStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBStyleManager.h; sourceTree = "<group>"; };
-		F5B578921A2E5AAB00207322 /* KBStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBStyleManager.m; sourceTree = "<group>"; };
-		F5B578961A2E681500207322 /* KBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBViewController.h; sourceTree = "<group>"; };
-		F5B578971A2E681500207322 /* KBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBViewController.m; sourceTree = "<group>"; };
+		F5B578861A2E55C200207322 /* KBSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBSearchController.h; path = dictionary/KBSearchController.h; sourceTree = "<group>"; };
+		F5B578871A2E55C200207322 /* KBSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBSearchController.m; path = dictionary/KBSearchController.m; sourceTree = "<group>"; };
+		F5B578881A2E55C200207322 /* KBSearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBSearchController.xib; path = dictionary/KBSearchController.xib; sourceTree = "<group>"; };
+		F5B5788D1A2E594000207322 /* KBNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBNavController.h; path = dictionary/KBNavController.h; sourceTree = "<group>"; };
+		F5B5788E1A2E594000207322 /* KBNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBNavController.m; path = dictionary/KBNavController.m; sourceTree = "<group>"; };
+		F5B578961A2E681500207322 /* KBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBViewController.h; path = dictionary/KBViewController.h; sourceTree = "<group>"; };
+		F5B578971A2E681500207322 /* KBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBViewController.m; path = dictionary/KBViewController.m; sourceTree = "<group>"; };
 		F5B5789B1A2E701800207322 /* book-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book-empty.png"; sourceTree = "<group>"; };
 		F5B5789C1A2E701800207322 /* book-empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book-empty@2x.png"; sourceTree = "<group>"; };
 		F5B5789D1A2E701800207322 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
@@ -86,6 +84,8 @@
 		F5B578A21A2E701800207322 /* magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnify@2x.png"; sourceTree = "<group>"; };
 		F5B578A31A2E701800207322 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		F5B578A41A2E701800207322 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		F5B578AF1A2E70E300207322 /* KBStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBStyleManager.h; path = dictionary/KBStyleManager.h; sourceTree = "<group>"; };
+		F5B578B01A2E70E300207322 /* KBStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBStyleManager.m; path = dictionary/KBStyleManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,8 +230,8 @@
 		F5B578941A2E5AAD00207322 /* Style Manager */ = {
 			isa = PBXGroup;
 			children = (
-				F5B578911A2E5AAB00207322 /* KBStyleManager.h */,
-				F5B578921A2E5AAB00207322 /* KBStyleManager.m */,
+				F5B578AF1A2E70E300207322 /* KBStyleManager.h */,
+				F5B578B01A2E70E300207322 /* KBStyleManager.m */,
 			);
 			name = "Style Manager";
 			sourceTree = "<group>";
@@ -413,11 +413,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B578B11A2E70E300207322 /* KBStyleManager.m in Sources */,
 				F5715C031A2E52D800610F8A /* main.m in Sources */,
 				F5B578891A2E55C200207322 /* KBSearchController.m in Sources */,
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
 				F5B578981A2E681500207322 /* KBViewController.m in Sources */,
-				F5B578931A2E5AAB00207322 /* KBStyleManager.m in Sources */,
 				F5715C071A2E52D800610F8A /* KBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
