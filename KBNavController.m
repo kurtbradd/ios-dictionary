@@ -18,14 +18,13 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        NSDictionary *attributes = @{NSFontAttributeName:[KBStyleManager navTitleFont],
+                                          NSForegroundColorAttributeName:[KBStyleManager whiteTextColor]};
         [self.navigationBar setTranslucent:NO];
-        [[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
+        [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
         [[UINavigationBar appearance] setBarTintColor:[KBStyleManager navBlueColor]];
-        [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[KBStyleManager navTitleFont],
-                                                               NSForegroundColorAttributeName:[KBStyleManager whiteTextColor]}];
-        [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[KBStyleManager navTitleFont]}
-                                                    forState:UIControlStateNormal];
-        
+        [[UINavigationBar appearance] setTitleTextAttributes:attributes];
+        [[UIBarButtonItem appearance] setTitleTextAttributes:attributes forState:UIControlStateNormal];
     }
     return self;
 }
