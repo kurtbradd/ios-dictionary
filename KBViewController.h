@@ -1,5 +1,5 @@
 //
-//  KBSearchController.h
+//  KBViewController.h
 //  dictionary
 //
 //  Created by Kurt DaCosta on 2014-12-02.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KBSearchController : KBViewController
+@interface KBViewController : UIViewController
 
 @end

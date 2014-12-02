@@ -24,6 +24,7 @@
 		F5B5788A1A2E55C200207322 /* KBSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578881A2E55C200207322 /* KBSearchController.xib */; };
 		F5B5788F1A2E594000207322 /* KBNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5788E1A2E594000207322 /* KBNavController.m */; };
 		F5B578931A2E5AAB00207322 /* KBStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578921A2E5AAB00207322 /* KBStyleManager.m */; };
+		F5B578981A2E681500207322 /* KBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578971A2E681500207322 /* KBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		F5B5788E1A2E594000207322 /* KBNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNavController.m; sourceTree = "<group>"; };
 		F5B578911A2E5AAB00207322 /* KBStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBStyleManager.h; sourceTree = "<group>"; };
 		F5B578921A2E5AAB00207322 /* KBStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBStyleManager.m; sourceTree = "<group>"; };
+		F5B578961A2E681500207322 /* KBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBViewController.h; sourceTree = "<group>"; };
+		F5B578971A2E681500207322 /* KBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +191,7 @@
 			children = (
 				F5B578901A2E594300207322 /* Navigation Ctrl */,
 				F5B5788B1A2E55CB00207322 /* SearchCtrl */,
+				F5B578991A2E681900207322 /* View Controller */,
 			);
 			name = Controllers;
 			path = ..;
@@ -217,6 +221,15 @@
 				F5B578941A2E5AAD00207322 /* Style Manager */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F5B578991A2E681900207322 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5B578961A2E681500207322 /* KBViewController.h */,
+				F5B578971A2E681500207322 /* KBViewController.m */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +367,7 @@
 				F5715C031A2E52D800610F8A /* main.m in Sources */,
 				F5B578891A2E55C200207322 /* KBSearchController.m in Sources */,
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
+				F5B578981A2E681500207322 /* KBViewController.m in Sources */,
 				F5B578931A2E5AAB00207322 /* KBStyleManager.m in Sources */,
 				F5715C071A2E52D800610F8A /* KBAppDelegate.m in Sources */,
 			);
