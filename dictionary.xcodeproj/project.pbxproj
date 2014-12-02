@@ -25,6 +25,16 @@
 		F5B5788F1A2E594000207322 /* KBNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5788E1A2E594000207322 /* KBNavController.m */; };
 		F5B578931A2E5AAB00207322 /* KBStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578921A2E5AAB00207322 /* KBStyleManager.m */; };
 		F5B578981A2E681500207322 /* KBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578971A2E681500207322 /* KBViewController.m */; };
+		F5B578A51A2E701800207322 /* book-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B5789B1A2E701800207322 /* book-empty.png */; };
+		F5B578A61A2E701800207322 /* book-empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B5789C1A2E701800207322 /* book-empty@2x.png */; };
+		F5B578A71A2E701800207322 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B5789D1A2E701800207322 /* book.png */; };
+		F5B578A81A2E701800207322 /* book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B5789E1A2E701800207322 /* book@2x.png */; };
+		F5B578A91A2E701800207322 /* chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B5789F1A2E701800207322 /* chevron.png */; };
+		F5B578AA1A2E701800207322 /* chevron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A01A2E701800207322 /* chevron@2x.png */; };
+		F5B578AB1A2E701800207322 /* magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A11A2E701800207322 /* magnify.png */; };
+		F5B578AC1A2E701800207322 /* magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A21A2E701800207322 /* magnify@2x.png */; };
+		F5B578AD1A2E701800207322 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A31A2E701800207322 /* settings.png */; };
+		F5B578AE1A2E701800207322 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A41A2E701800207322 /* settings@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +76,16 @@
 		F5B578921A2E5AAB00207322 /* KBStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBStyleManager.m; sourceTree = "<group>"; };
 		F5B578961A2E681500207322 /* KBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBViewController.h; sourceTree = "<group>"; };
 		F5B578971A2E681500207322 /* KBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBViewController.m; sourceTree = "<group>"; };
+		F5B5789B1A2E701800207322 /* book-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book-empty.png"; sourceTree = "<group>"; };
+		F5B5789C1A2E701800207322 /* book-empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book-empty@2x.png"; sourceTree = "<group>"; };
+		F5B5789D1A2E701800207322 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
+		F5B5789E1A2E701800207322 /* book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book@2x.png"; sourceTree = "<group>"; };
+		F5B5789F1A2E701800207322 /* chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chevron.png; sourceTree = "<group>"; };
+		F5B578A01A2E701800207322 /* chevron@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chevron@2x.png"; sourceTree = "<group>"; };
+		F5B578A11A2E701800207322 /* magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnify.png; sourceTree = "<group>"; };
+		F5B578A21A2E701800207322 /* magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnify@2x.png"; sourceTree = "<group>"; };
+		F5B578A31A2E701800207322 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		F5B578A41A2E701800207322 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +158,7 @@
 		F5715BFC1A2E52D800610F8A /* dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				F5B5789A1A2E701800207322 /* Assets */,
 				F5B5788C1A2E55D800207322 /* Controllers */,
 				F5715C051A2E52D800610F8A /* KBAppDelegate.h */,
 				F5715C061A2E52D800610F8A /* KBAppDelegate.m */,
@@ -232,6 +253,24 @@
 			name = "View Controller";
 			sourceTree = "<group>";
 		};
+		F5B5789A1A2E701800207322 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5789B1A2E701800207322 /* book-empty.png */,
+				F5B5789C1A2E701800207322 /* book-empty@2x.png */,
+				F5B5789D1A2E701800207322 /* book.png */,
+				F5B5789E1A2E701800207322 /* book@2x.png */,
+				F5B5789F1A2E701800207322 /* chevron.png */,
+				F5B578A01A2E701800207322 /* chevron@2x.png */,
+				F5B578A11A2E701800207322 /* magnify.png */,
+				F5B578A21A2E701800207322 /* magnify@2x.png */,
+				F5B578A31A2E701800207322 /* settings.png */,
+				F5B578A41A2E701800207322 /* settings@2x.png */,
+			);
+			name = Assets;
+			path = png;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,6 +349,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B578AD1A2E701800207322 /* settings.png in Resources */,
+				F5B578AE1A2E701800207322 /* settings@2x.png in Resources */,
+				F5B578A61A2E701800207322 /* book-empty@2x.png in Resources */,
+				F5B578AC1A2E701800207322 /* magnify@2x.png in Resources */,
+				F5B578A81A2E701800207322 /* book@2x.png in Resources */,
+				F5B578A51A2E701800207322 /* book-empty.png in Resources */,
+				F5B578AB1A2E701800207322 /* magnify.png in Resources */,
+				F5B578A91A2E701800207322 /* chevron.png in Resources */,
+				F5B578AA1A2E701800207322 /* chevron@2x.png in Resources */,
+				F5B578A71A2E701800207322 /* book.png in Resources */,
 				F5715C011A2E52D800610F8A /* InfoPlist.strings in Resources */,
 				F5B5788A1A2E55C200207322 /* KBSearchController.xib in Resources */,
 				F5715C091A2E52D800610F8A /* Images.xcassets in Resources */,
