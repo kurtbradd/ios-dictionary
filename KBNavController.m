@@ -21,7 +21,8 @@
         [self.navigationBar setTranslucent:NO];
         [[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
         [[UINavigationBar appearance] setBarTintColor:[KBStyleManager navBlueColor]];
-        [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[KBStyleManager navTitleFont]}];
+        [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[KBStyleManager navTitleFont],
+                                                               NSForegroundColorAttributeName:[KBStyleManager whiteTextColor]}];
         [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[KBStyleManager navTitleFont]}
                                                     forState:UIControlStateNormal];
         
