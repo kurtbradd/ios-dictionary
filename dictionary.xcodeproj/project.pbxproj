@@ -35,6 +35,8 @@
 		F5B578AD1A2E701800207322 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A31A2E701800207322 /* settings.png */; };
 		F5B578AE1A2E701800207322 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578A41A2E701800207322 /* settings@2x.png */; };
 		F5B578B11A2E70E300207322 /* KBStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578B01A2E70E300207322 /* KBStyleManager.m */; };
+		F5B578B91A2E71AB00207322 /* KBSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578B71A2E71AB00207322 /* KBSettingsController.m */; };
+		F5B578BA1A2E71AB00207322 /* KBSettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578B81A2E71AB00207322 /* KBSettingsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,9 @@
 		F5B578A41A2E701800207322 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		F5B578AF1A2E70E300207322 /* KBStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBStyleManager.h; path = dictionary/KBStyleManager.h; sourceTree = "<group>"; };
 		F5B578B01A2E70E300207322 /* KBStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBStyleManager.m; path = dictionary/KBStyleManager.m; sourceTree = "<group>"; };
+		F5B578B61A2E71AB00207322 /* KBSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBSettingsController.h; path = dictionary/KBSettingsController.h; sourceTree = "<group>"; };
+		F5B578B71A2E71AB00207322 /* KBSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBSettingsController.m; path = dictionary/KBSettingsController.m; sourceTree = "<group>"; };
+		F5B578B81A2E71AB00207322 /* KBSettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBSettingsController.xib; path = dictionary/KBSettingsController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +217,7 @@
 			children = (
 				F5B578901A2E594300207322 /* Navigation Ctrl */,
 				F5B5788B1A2E55CB00207322 /* SearchCtrl */,
+				F5B578B51A2E718300207322 /* SettingsCtrl */,
 				F5B578991A2E681900207322 /* View Controller */,
 			);
 			name = Controllers;
@@ -269,6 +275,16 @@
 			);
 			name = Assets;
 			path = png;
+			sourceTree = "<group>";
+		};
+		F5B578B51A2E718300207322 /* SettingsCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				F5B578B61A2E71AB00207322 /* KBSettingsController.h */,
+				F5B578B71A2E71AB00207322 /* KBSettingsController.m */,
+				F5B578B81A2E71AB00207322 /* KBSettingsController.xib */,
+			);
+			name = SettingsCtrl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +376,7 @@
 				F5B578AA1A2E701800207322 /* chevron@2x.png in Resources */,
 				F5B578A71A2E701800207322 /* book.png in Resources */,
 				F5715C011A2E52D800610F8A /* InfoPlist.strings in Resources */,
+				F5B578BA1A2E71AB00207322 /* KBSettingsController.xib in Resources */,
 				F5B5788A1A2E55C200207322 /* KBSearchController.xib in Resources */,
 				F5715C091A2E52D800610F8A /* Images.xcassets in Resources */,
 			);
@@ -416,6 +433,7 @@
 				F5B578B11A2E70E300207322 /* KBStyleManager.m in Sources */,
 				F5715C031A2E52D800610F8A /* main.m in Sources */,
 				F5B578891A2E55C200207322 /* KBSearchController.m in Sources */,
+				F5B578B91A2E71AB00207322 /* KBSettingsController.m in Sources */,
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
 				F5B578981A2E681500207322 /* KBViewController.m in Sources */,
 				F5715C071A2E52D800610F8A /* KBAppDelegate.m in Sources */,
