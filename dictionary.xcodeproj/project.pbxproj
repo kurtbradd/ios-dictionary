@@ -41,6 +41,7 @@
 		F5B578BE1A2E8A2900207322 /* clearButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578BD1A2E8A2900207322 /* clearButton@2x.png */; };
 		F5B578C21A2E9C3000207322 /* KBEmptyResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578C01A2E9C3000207322 /* KBEmptyResultsController.m */; };
 		F5B578C31A2E9C3000207322 /* KBEmptyResultsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */; };
+		F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BD15181A2F9C2F006382D7 /* KBSettingOptionsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		F5B578BF1A2E9C3000207322 /* KBEmptyResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBEmptyResultsController.h; sourceTree = "<group>"; };
 		F5B578C01A2E9C3000207322 /* KBEmptyResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBEmptyResultsController.m; sourceTree = "<group>"; };
 		F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBEmptyResultsController.xib; sourceTree = "<group>"; };
+		F5BD15171A2F9C2F006382D7 /* KBSettingOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSettingOptionsCell.h; sourceTree = "<group>"; };
+		F5BD15181A2F9C2F006382D7 /* KBSettingOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSettingOptionsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				F5B5789A1A2E701800207322 /* Assets */,
-				F5B5788C1A2E55D800207322 /* Controllers */,
+				F5BD151B1A2F9C41006382D7 /* Views */,
+				F5B5788C1A2E55D800207322 /* View Controllers */,
 				F5715C051A2E52D800610F8A /* KBAppDelegate.h */,
 				F5715C061A2E52D800610F8A /* KBAppDelegate.m */,
 				F5715C081A2E52D800610F8A /* Images.xcassets */,
@@ -221,7 +225,7 @@
 			name = SearchCtrl;
 			sourceTree = "<group>";
 		};
-		F5B5788C1A2E55D800207322 /* Controllers */ = {
+		F5B5788C1A2E55D800207322 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F5B578901A2E594300207322 /* Navigation Ctrl */,
@@ -230,7 +234,7 @@
 				F5B578991A2E681900207322 /* View Controller */,
 				F5B578C41A2E9C3E00207322 /* EmptyResults Controller */,
 			);
-			name = Controllers;
+			name = "View Controllers";
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -307,6 +311,23 @@
 				F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */,
 			);
 			name = "EmptyResults Controller";
+			sourceTree = "<group>";
+		};
+		F5BD151A1A2F9C35006382D7 /* Setting Options Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F5BD15171A2F9C2F006382D7 /* KBSettingOptionsCell.h */,
+				F5BD15181A2F9C2F006382D7 /* KBSettingOptionsCell.m */,
+			);
+			name = "Setting Options Cell";
+			sourceTree = "<group>";
+		};
+		F5BD151B1A2F9C41006382D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5BD151A1A2F9C35006382D7 /* Setting Options Cell */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +481,7 @@
 				F5B578891A2E55C200207322 /* KBSearchController.m in Sources */,
 				F5B578B91A2E71AB00207322 /* KBSettingsController.m in Sources */,
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
+				F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */,
 				F5B578981A2E681500207322 /* KBViewController.m in Sources */,
 				F5715C071A2E52D800610F8A /* KBAppDelegate.m in Sources */,
 				F5B578C21A2E9C3000207322 /* KBEmptyResultsController.m in Sources */,
