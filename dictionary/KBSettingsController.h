@@ -8,6 +8,6 @@
 
 #import "KBViewController.h"
 
-@interface KBSettingsController : KBViewController
+@interface KBSettingsController : KBViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
