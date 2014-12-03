@@ -8,6 +8,7 @@
 
 #import "KBSettingsController.h"
 #import "KBSettingOptionsCell.h"
+#import "KBSettingModeCell.h"
 
 @interface KBSettingsController ()
 
@@ -60,14 +61,14 @@
     // customization cells
     if (indexPath.section == 0) {
         KBSettingOptionsCell *cell = [[KBSettingOptionsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        [cell.textLabel setText:[self.options[indexPath.section] valueForKey:@"title"]];
+        [cell.textLabel setText:[[self.options[indexPath.section] valueForKey:@"options"] objectAtIndex:indexPath.row]];
         return cell;
     }
     
     // mode cells
     if (indexPath.section == 1) {
-        KBSettingOptionsCell *cell = [[KBSettingOptionsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        [cell.textLabel setText:[self.options[indexPath.section] valueForKey:@"title"]];
+        KBSettingModeCell *cell = [[KBSettingModeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        [cell.textLabel setText:[[self.options[indexPath.section] valueForKey:@"options"] objectAtIndex:indexPath.row]];
         return cell;
     }
     
