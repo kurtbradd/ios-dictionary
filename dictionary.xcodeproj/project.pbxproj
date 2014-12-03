@@ -37,6 +37,8 @@
 		F5B578B11A2E70E300207322 /* KBStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578B01A2E70E300207322 /* KBStyleManager.m */; };
 		F5B578B91A2E71AB00207322 /* KBSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578B71A2E71AB00207322 /* KBSettingsController.m */; };
 		F5B578BA1A2E71AB00207322 /* KBSettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578B81A2E71AB00207322 /* KBSettingsController.xib */; };
+		F5B578BC1A2E899B00207322 /* clearButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578BB1A2E899B00207322 /* clearButtonPressed@2x.png */; };
+		F5B578BE1A2E8A2900207322 /* clearButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578BD1A2E8A2900207322 /* clearButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		F5B578B61A2E71AB00207322 /* KBSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBSettingsController.h; path = dictionary/KBSettingsController.h; sourceTree = "<group>"; };
 		F5B578B71A2E71AB00207322 /* KBSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBSettingsController.m; path = dictionary/KBSettingsController.m; sourceTree = "<group>"; };
 		F5B578B81A2E71AB00207322 /* KBSettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBSettingsController.xib; path = dictionary/KBSettingsController.xib; sourceTree = "<group>"; };
+		F5B578BB1A2E899B00207322 /* clearButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearButtonPressed@2x.png"; sourceTree = "<group>"; };
+		F5B578BD1A2E8A2900207322 /* clearButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,8 @@
 		F5B5789A1A2E701800207322 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F5B578BD1A2E8A2900207322 /* clearButton@2x.png */,
+				F5B578BB1A2E899B00207322 /* clearButtonPressed@2x.png */,
 				F5B5789B1A2E701800207322 /* book-empty.png */,
 				F5B5789C1A2E701800207322 /* book-empty@2x.png */,
 				F5B5789D1A2E701800207322 /* book.png */,
@@ -370,6 +376,7 @@
 				F5B578A61A2E701800207322 /* book-empty@2x.png in Resources */,
 				F5B578AC1A2E701800207322 /* magnify@2x.png in Resources */,
 				F5B578A81A2E701800207322 /* book@2x.png in Resources */,
+				F5B578BE1A2E8A2900207322 /* clearButton@2x.png in Resources */,
 				F5B578A51A2E701800207322 /* book-empty.png in Resources */,
 				F5B578AB1A2E701800207322 /* magnify.png in Resources */,
 				F5B578A91A2E701800207322 /* chevron.png in Resources */,
@@ -378,6 +385,7 @@
 				F5715C011A2E52D800610F8A /* InfoPlist.strings in Resources */,
 				F5B578BA1A2E71AB00207322 /* KBSettingsController.xib in Resources */,
 				F5B5788A1A2E55C200207322 /* KBSearchController.xib in Resources */,
+				F5B578BC1A2E899B00207322 /* clearButtonPressed@2x.png in Resources */,
 				F5715C091A2E52D800610F8A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
