@@ -7,6 +7,7 @@
 //
 
 #import "KBSettingsController.h"
+#import "KBSettingOptionsCell.h"
 
 @interface KBSettingsController ()
 
@@ -29,7 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setFont:[KBStyleManager helvetivaWithSize:14.0]];
+    [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setTextColor:[KBStyleManager grayTextRegularColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,16 +59,14 @@
 {
     // customization cells
     if (indexPath.section == 0) {
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+        KBSettingOptionsCell *cell = [[KBSettingOptionsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         [cell.textLabel setText:[self.options[indexPath.section] valueForKey:@"title"]];
         return cell;
     }
     
     // mode cells
     if (indexPath.section == 1) {
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+        KBSettingOptionsCell *cell = [[KBSettingOptionsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         [cell.textLabel setText:[self.options[indexPath.section] valueForKey:@"title"]];
         return cell;
     }
@@ -76,7 +76,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"did select cells");
+    [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
 }
 
 @end
