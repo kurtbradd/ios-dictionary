@@ -84,14 +84,14 @@
 
 - (IBAction)search:(id)sender
 {
-    if (!self.searchText.text.length){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                        message:@"No Search Text :("
-                                                       delegate:nil
-                                              cancelButtonTitle:@"Ok"
-                                              otherButtonTitles:nil];
-        return [alert show];
-    }
+//    if (!self.searchText.text.length){
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+//                                                        message:@"No Search Text :("
+//                                                       delegate:nil
+//                                              cancelButtonTitle:@"Ok"
+//                                              otherButtonTitles:nil];
+//        return [alert show];
+//    }
     [self.view endEditing:YES];
     KBSettingsController *settings = [[KBSettingsController alloc] init];
     [self.navigationController pushViewController:settings animated:YES];
