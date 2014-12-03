@@ -8,6 +8,16 @@
 
 #import "KBSettingOptionsCell.h"
 
+@protocol SettingModeCellModeChangeProtocol <NSObject>
+
+@required
+
+- (void)modeCellDidChangeToValue:(NSString *)value;
+
+@end
+
 @interface KBSettingModeCell : KBSettingOptionsCell
+
+@property (nonatomic, strong) id<SettingModeCellModeChangeProtocol>delegate;
 
 @end

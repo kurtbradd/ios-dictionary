@@ -21,11 +21,21 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.segmentControl = [[UISegmentedControl alloc] initWithItems:@[@"On",@"Off",@"Auto"]];
-        [self.segmentControl setTintColor:[KBStyleManager grayTextDarkColor]];
-        [self setAccessoryView:self.segmentControl];
+        _segmentControl = [[UISegmentedControl alloc] initWithItems:@[@"On",@"Off",@"Auto"]];
+        [_segmentControl setTintColor:[KBStyleManager grayTextDarkColor]];
+        [_segmentControl addTarget:self
+                            action:@selector(segmentSelected)
+                  forControlEvents:UIControlEventValueChanged];
+        [self setAccessoryView:_segmentControl];
     }
     return self;
+}
+
+- (void)segmentSelected
+{
+    if (self.delegate) {
+        [self.delegate modeCellDidChangeToValue:[_segmentControl titleForSegmentAtIndex:_segmentControl.selectedSegmentIndex]];
+    }
 }
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {}
