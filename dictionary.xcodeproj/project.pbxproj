@@ -39,6 +39,8 @@
 		F5B578BA1A2E71AB00207322 /* KBSettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578B81A2E71AB00207322 /* KBSettingsController.xib */; };
 		F5B578BC1A2E899B00207322 /* clearButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578BB1A2E899B00207322 /* clearButtonPressed@2x.png */; };
 		F5B578BE1A2E8A2900207322 /* clearButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5B578BD1A2E8A2900207322 /* clearButton@2x.png */; };
+		F5B578C21A2E9C3000207322 /* KBEmptyResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578C01A2E9C3000207322 /* KBEmptyResultsController.m */; };
+		F5B578C31A2E9C3000207322 /* KBEmptyResultsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,9 @@
 		F5B578B81A2E71AB00207322 /* KBSettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBSettingsController.xib; path = dictionary/KBSettingsController.xib; sourceTree = "<group>"; };
 		F5B578BB1A2E899B00207322 /* clearButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearButtonPressed@2x.png"; sourceTree = "<group>"; };
 		F5B578BD1A2E8A2900207322 /* clearButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearButton@2x.png"; sourceTree = "<group>"; };
+		F5B578BF1A2E9C3000207322 /* KBEmptyResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBEmptyResultsController.h; sourceTree = "<group>"; };
+		F5B578C01A2E9C3000207322 /* KBEmptyResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBEmptyResultsController.m; sourceTree = "<group>"; };
+		F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBEmptyResultsController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +228,7 @@
 				F5B5788B1A2E55CB00207322 /* SearchCtrl */,
 				F5B578B51A2E718300207322 /* SettingsCtrl */,
 				F5B578991A2E681900207322 /* View Controller */,
+				F5B578C41A2E9C3E00207322 /* EmptyResults Controller */,
 			);
 			name = Controllers;
 			path = ..;
@@ -291,6 +297,16 @@
 				F5B578B81A2E71AB00207322 /* KBSettingsController.xib */,
 			);
 			name = SettingsCtrl;
+			sourceTree = "<group>";
+		};
+		F5B578C41A2E9C3E00207322 /* EmptyResults Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5B578BF1A2E9C3000207322 /* KBEmptyResultsController.h */,
+				F5B578C01A2E9C3000207322 /* KBEmptyResultsController.m */,
+				F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */,
+			);
+			name = "EmptyResults Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +392,7 @@
 				F5B578A61A2E701800207322 /* book-empty@2x.png in Resources */,
 				F5B578AC1A2E701800207322 /* magnify@2x.png in Resources */,
 				F5B578A81A2E701800207322 /* book@2x.png in Resources */,
+				F5B578C31A2E9C3000207322 /* KBEmptyResultsController.xib in Resources */,
 				F5B578BE1A2E8A2900207322 /* clearButton@2x.png in Resources */,
 				F5B578A51A2E701800207322 /* book-empty.png in Resources */,
 				F5B578AB1A2E701800207322 /* magnify.png in Resources */,
@@ -445,6 +462,7 @@
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
 				F5B578981A2E681500207322 /* KBViewController.m in Sources */,
 				F5715C071A2E52D800610F8A /* KBAppDelegate.m in Sources */,
+				F5B578C21A2E9C3000207322 /* KBEmptyResultsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
