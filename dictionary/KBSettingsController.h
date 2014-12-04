@@ -7,7 +7,8 @@
 //
 
 #import "KBViewController.h"
+#import "KBSettingModeCell.h"
 
-@interface KBSettingsController : KBViewController <UITableViewDataSource, UITableViewDelegate>
+@interface KBSettingsController : KBViewController <SettingModeCellModeChangeProtocol>
 
 @end
