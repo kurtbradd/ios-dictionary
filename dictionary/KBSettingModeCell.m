@@ -34,7 +34,8 @@
 - (void)segmentSelected
 {
     if (self.delegate) {
-        [self.delegate modeCellDidChangeToValue:[_segmentControl titleForSegmentAtIndex:_segmentControl.selectedSegmentIndex]];
+        NSString *selectedValue =[_segmentControl titleForSegmentAtIndex:_segmentControl.selectedSegmentIndex];
+        [self.delegate modeCellDidChangeToValue:selectedValue];
     }
 }
 
