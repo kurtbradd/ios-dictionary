@@ -47,6 +47,8 @@
 		F5B578C21A2E9C3000207322 /* KBEmptyResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578C01A2E9C3000207322 /* KBEmptyResultsController.m */; };
 		F5B578C31A2E9C3000207322 /* KBEmptyResultsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */; };
 		F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BD15181A2F9C2F006382D7 /* KBSettingOptionsCell.m */; };
+		F5BEA5CD1A30309E00613D85 /* KBAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA5CC1A30309E00613D85 /* KBAPI.m */; };
+		F5BEA5D11A30359C00613D85 /* KBKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA5D01A30359C00613D85 /* KBKeys.m */; };
 		F5E7D7E01A301A01002620D9 /* KBNoResultsAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +121,10 @@
 		F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBEmptyResultsController.xib; sourceTree = "<group>"; };
 		F5BD15171A2F9C2F006382D7 /* KBSettingOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSettingOptionsCell.h; sourceTree = "<group>"; };
 		F5BD15181A2F9C2F006382D7 /* KBSettingOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSettingOptionsCell.m; sourceTree = "<group>"; };
+		F5BEA5CB1A30309E00613D85 /* KBAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBAPI.h; sourceTree = "<group>"; };
+		F5BEA5CC1A30309E00613D85 /* KBAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBAPI.m; sourceTree = "<group>"; };
+		F5BEA5CF1A30359C00613D85 /* KBKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBKeys.h; sourceTree = "<group>"; };
+		F5BEA5D01A30359C00613D85 /* KBKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBKeys.m; sourceTree = "<group>"; };
 		F5E7D7DE1A301A01002620D9 /* KBNoResultsAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNoResultsAttributedString.h; sourceTree = "<group>"; };
 		F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNoResultsAttributedString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				F5076C221A300E4A00F61090 /* SettingsTableDataDelegate */,
+				F5BEA5CE1A3030A200613D85 /* API */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -409,6 +416,25 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		F5BEA5CE1A3030A200613D85 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F5BEA5CB1A30309E00613D85 /* KBAPI.h */,
+				F5BEA5CC1A30309E00613D85 /* KBAPI.m */,
+				F5BEA5D21A30359F00613D85 /* Keys */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		F5BEA5D21A30359F00613D85 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				F5BEA5CF1A30359C00613D85 /* KBKeys.h */,
+				F5BEA5D01A30359C00613D85 /* KBKeys.m */,
+			);
+			name = Keys;
+			sourceTree = "<group>";
+		};
 		F5E7D7E11A301A06002620D9 /* No Results Attributed String */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BEA5D11A30359C00613D85 /* KBKeys.m in Sources */,
 				F5B578B11A2E70E300207322 /* KBStyleManager.m in Sources */,
 				F5715C031A2E52D800610F8A /* main.m in Sources */,
 				F5076C2E1A30160600F61090 /* KBSearchTextField.m in Sources */,
@@ -573,6 +600,7 @@
 				F5076C2A1A30151A00F61090 /* KBDictionaryTitleView.m in Sources */,
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
 				F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */,
+				F5BEA5CD1A30309E00613D85 /* KBAPI.m in Sources */,
 				F5B0B52F1A2FA375002C580E /* KBSettingModeCell.m in Sources */,
 				F5B578981A2E681500207322 /* KBViewController.m in Sources */,
 				F5715C071A2E52D800610F8A /* KBAppDelegate.m in Sources */,
