@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8F76933CB772E192E5366680 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D966F54864DBFA8876A5D175 /* libPods.a */; };
+		F5076C211A300E3B00F61090 /* KBSettingsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076C201A300E3B00F61090 /* KBSettingsTableView.m */; };
+		F5076C261A30135000F61090 /* KBSearchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076C251A30135000F61090 /* KBSearchButton.m */; };
+		F5076C2A1A30151A00F61090 /* KBDictionaryTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076C291A30151A00F61090 /* KBDictionaryTitleView.m */; };
+		F5076C2E1A30160600F61090 /* KBSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076C2D1A30160600F61090 /* KBSearchTextField.m */; };
 		F5715BF71A2E52D800610F8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5715BF61A2E52D800610F8A /* Foundation.framework */; };
 		F5715BF91A2E52D800610F8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5715BF81A2E52D800610F8A /* CoreGraphics.framework */; };
 		F5715BFB1A2E52D800610F8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5715BFA1A2E52D800610F8A /* UIKit.framework */; };
@@ -43,6 +47,7 @@
 		F5B578C21A2E9C3000207322 /* KBEmptyResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578C01A2E9C3000207322 /* KBEmptyResultsController.m */; };
 		F5B578C31A2E9C3000207322 /* KBEmptyResultsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */; };
 		F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BD15181A2F9C2F006382D7 /* KBSettingOptionsCell.m */; };
+		F5E7D7E01A301A01002620D9 /* KBNoResultsAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,14 @@
 		249E4D76C2F3518EDAD07D61 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B5FA353896AC9C7BD6D00B6A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D966F54864DBFA8876A5D175 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5076C1F1A300E3B00F61090 /* KBSettingsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSettingsTableView.h; sourceTree = "<group>"; };
+		F5076C201A300E3B00F61090 /* KBSettingsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSettingsTableView.m; sourceTree = "<group>"; };
+		F5076C241A30135000F61090 /* KBSearchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSearchButton.h; sourceTree = "<group>"; };
+		F5076C251A30135000F61090 /* KBSearchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSearchButton.m; sourceTree = "<group>"; };
+		F5076C281A30151A00F61090 /* KBDictionaryTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBDictionaryTitleView.h; sourceTree = "<group>"; };
+		F5076C291A30151A00F61090 /* KBDictionaryTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDictionaryTitleView.m; sourceTree = "<group>"; };
+		F5076C2C1A30160600F61090 /* KBSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSearchTextField.h; sourceTree = "<group>"; };
+		F5076C2D1A30160600F61090 /* KBSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSearchTextField.m; sourceTree = "<group>"; };
 		F5715BF31A2E52D800610F8A /* dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5715BF61A2E52D800610F8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5715BF81A2E52D800610F8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +119,8 @@
 		F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBEmptyResultsController.xib; sourceTree = "<group>"; };
 		F5BD15171A2F9C2F006382D7 /* KBSettingOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSettingOptionsCell.h; sourceTree = "<group>"; };
 		F5BD15181A2F9C2F006382D7 /* KBSettingOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSettingOptionsCell.m; sourceTree = "<group>"; };
+		F5E7D7DE1A301A01002620D9 /* KBNoResultsAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNoResultsAttributedString.h; sourceTree = "<group>"; };
+		F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNoResultsAttributedString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +157,54 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F5076C221A300E4A00F61090 /* SettingsTableDataDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F5076C1F1A300E3B00F61090 /* KBSettingsTableView.h */,
+				F5076C201A300E3B00F61090 /* KBSettingsTableView.m */,
+			);
+			name = SettingsTableDataDelegate;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F5076C231A30127B00F61090 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5076C221A300E4A00F61090 /* SettingsTableDataDelegate */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F5076C271A30135800F61090 /* Search Button */ = {
+			isa = PBXGroup;
+			children = (
+				F5076C241A30135000F61090 /* KBSearchButton.h */,
+				F5076C251A30135000F61090 /* KBSearchButton.m */,
+			);
+			name = "Search Button";
+			sourceTree = "<group>";
+		};
+		F5076C2B1A30151D00F61090 /* Dictionary Title View */ = {
+			isa = PBXGroup;
+			children = (
+				F5076C281A30151A00F61090 /* KBDictionaryTitleView.h */,
+				F5076C291A30151A00F61090 /* KBDictionaryTitleView.m */,
+			);
+			name = "Dictionary Title View";
+			sourceTree = "<group>";
+		};
+		F5076C2F1A30160A00F61090 /* Search Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				F5076C2C1A30160600F61090 /* KBSearchTextField.h */,
+				F5076C2D1A30160600F61090 /* KBSearchTextField.m */,
+			);
+			name = "Search Text Field";
+			sourceTree = "<group>";
+		};
 		F5715BEA1A2E52D800610F8A = {
 			isa = PBXGroup;
 			children = (
-				F5B578951A2E5ABB00207322 /* Helpers */,
 				F5715BFC1A2E52D800610F8A /* dictionary */,
 				F5715C151A2E52D800610F8A /* dictionaryTests */,
 				F5715BF51A2E52D800610F8A /* Frameworks */,
@@ -178,6 +237,8 @@
 		F5715BFC1A2E52D800610F8A /* dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				F5B578951A2E5ABB00207322 /* Helpers */,
+				F5076C231A30127B00F61090 /* Models */,
 				F5B5789A1A2E701800207322 /* Assets */,
 				F5BD151B1A2F9C41006382D7 /* Views */,
 				F5B5788C1A2E55D800207322 /* View Controllers */,
@@ -274,6 +335,7 @@
 				F5B578941A2E5AAD00207322 /* Style Manager */,
 			);
 			name = Helpers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F5B578991A2E681900207322 /* View Controller */ = {
@@ -339,8 +401,21 @@
 			children = (
 				F5BD151A1A2F9C35006382D7 /* Setting Options Cell */,
 				F5B0B5271A2FA09C002C580E /* Setting Mode Cell */,
+				F5076C271A30135800F61090 /* Search Button */,
+				F5076C2B1A30151D00F61090 /* Dictionary Title View */,
+				F5076C2F1A30160A00F61090 /* Search Text Field */,
+				F5E7D7E11A301A06002620D9 /* No Results Attributed String */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		F5E7D7E11A301A06002620D9 /* No Results Attributed String */ = {
+			isa = PBXGroup;
+			children = (
+				F5E7D7DE1A301A01002620D9 /* KBNoResultsAttributedString.h */,
+				F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */,
+			);
+			name = "No Results Attributed String";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,14 +566,19 @@
 			files = (
 				F5B578B11A2E70E300207322 /* KBStyleManager.m in Sources */,
 				F5715C031A2E52D800610F8A /* main.m in Sources */,
+				F5076C2E1A30160600F61090 /* KBSearchTextField.m in Sources */,
+				F5076C261A30135000F61090 /* KBSearchButton.m in Sources */,
 				F5B578891A2E55C200207322 /* KBSearchController.m in Sources */,
 				F5B578B91A2E71AB00207322 /* KBSettingsController.m in Sources */,
+				F5076C2A1A30151A00F61090 /* KBDictionaryTitleView.m in Sources */,
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
 				F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */,
 				F5B0B52F1A2FA375002C580E /* KBSettingModeCell.m in Sources */,
 				F5B578981A2E681500207322 /* KBViewController.m in Sources */,
 				F5715C071A2E52D800610F8A /* KBAppDelegate.m in Sources */,
 				F5B578C21A2E9C3000207322 /* KBEmptyResultsController.m in Sources */,
+				F5E7D7E01A301A01002620D9 /* KBNoResultsAttributedString.m in Sources */,
+				F5076C211A300E3B00F61090 /* KBSettingsTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
