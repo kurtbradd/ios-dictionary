@@ -7,6 +7,7 @@
 //
 
 #import "KBEmptyResultsController.h"
+#import "KBNoResultsAttributedString.h"
 
 @interface KBEmptyResultsController ()
 
@@ -27,15 +28,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    CGFloat fontSize = 16.0;
-    NSMutableAttributedString *label = [[NSMutableAttributedString alloc] initWithAttributedString:self.message.attributedText];
-    [label addAttribute:NSFontAttributeName value:[KBStyleManager helvetivaWithSize:fontSize] range:(NSRange){0, label.length}];
-    [label appendAttributedString:[[NSAttributedString alloc] initWithString:_searchString
-                                                                  attributes:@{NSFontAttributeName:[KBStyleManager helvetivaBoldWithSize:fontSize]}]];
-    [label appendAttributedString:[[NSAttributedString alloc]initWithString:@" :("
-                                                                 attributes:@{NSFontAttributeName:[KBStyleManager helvetivaWithSize:fontSize]}]];
-    [label addAttribute:NSForegroundColorAttributeName value:[KBStyleManager grayTextDarkColor] range:(NSRange){0, label.length}];
-    [self.message setAttributedText:label];
+    [self.message setAttributedText:[[KBNoResultsAttributedString alloc] initWithAttributedString:self.message.attributedText
+                                                                                    andSearchTerm:self.searchString]];
 }
 
 @end
