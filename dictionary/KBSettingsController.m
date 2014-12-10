@@ -10,25 +10,43 @@
 #import "KBSettingOptionsCell.h"
 #import "KBSettingModeCell.h"
 #import "KBSettingsTableView.h"
+#import "KBResultsSettingTableDataSourceDelegate.h"
+#import "KBDictionarySourcesTableDataDelegate.h"
+#import "KBUserDefaults.h"
 
 @interface KBSettingsController ()
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) KBSettingsTableView *tableDataSourceAndDelegate;
+@property (nonatomic, strong) KBSuperTableDataDelegate *tableDataSourceAndDelegate;
+@property (nonatomic, strong) KBUserDefaults *settings;
+
 @end
 
 @implementation KBSettingsController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithTitle:(NSString *)title tableSourceClass:(NSString *)sourceClass
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.title = @"Settings";
-        self.tableDataSourceAndDelegate = [[KBSettingsTableView alloc] initWithDelegate:self];
+        self.title = title;
+        self.settings = [[KBUserDefaults alloc] init];
+        self.tableDataSourceAndDelegate = [[NSClassFromString(sourceClass) alloc] initWithCellDelegate:self];
         self.tableView.dataSource = self.tableDataSourceAndDelegate;
         self.tableView.delegate = self.tableDataSourceAndDelegate;
     }
     return self;
+}
+
+- (id)initWithSettingType:(SettingControllerType)type
+{
+    switch (type) {
+        case kResultSettings:
+            return [self initWithTitle:@"Results" tableSourceClass:@"KBResultsSettingTableDataSourceDelegate"];
+        case kSourceSettings:
+            return [self initWithTitle:@"Sources" tableSourceClass:@"KBDictionarySourcesTableDataDelegate"];
+        default:
+            return [self initWithTitle:@"Settings" tableSourceClass:@"KBSettingsTableView"];
+    }
 }
 
 - (void)viewDidLoad
@@ -38,11 +56,23 @@
     [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setTextColor:[KBStyleManager grayTextRegularColor]];
 }
 
-#pragma mark - SettingModeCellModeChangeProtocol
-
+#pragma mark - Cell Delegate Methods
 - (void)modeCellDidChangeToValue:(NSString *)value
 {
-//    handle mode change
+//    TODO NIGHTMODE
 }
+
+- (void)switchCell:(KBSettingSwitchCell *)switchCell
+  didChangeToValue:(BOOL)value
+{
+    SEL method = (value)?(@selector(addDefaultSearchGrammar:)):(@selector(removeDefaultSearchGrammar:));
+    [self.settings performSelector:method withObject:switchCell.textLabel.text];
+}
+
+- (void)didChangeToDictionarySource:(NSString *)source
+{
+    [self.settings setDefaultDictionarySource:source];
+}
+
 
 @end

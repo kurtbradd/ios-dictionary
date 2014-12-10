@@ -8,7 +8,17 @@
 
 #import "KBViewController.h"
 #import "KBSettingModeCell.h"
+#import "KBSettingSwitchCell.h"
+#import "KBDictSourcesCell.h"
 
-@interface KBSettingsController : KBViewController <SettingModeCellModeChangeProtocol>
+typedef NS_ENUM(NSUInteger, SettingControllerType) {
+    kMainSettings,
+    kResultSettings,
+    kSourceSettings
+};
+
+@interface KBSettingsController : KBViewController <SettingModeCellModeChangeProtocol, SettingSwitchCellValueChangeProtocol, DictionarySourceChangeProtocol>
+
+- (id)initWithSettingType:(SettingControllerType)type;
 
 @end
