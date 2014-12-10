@@ -31,6 +31,11 @@
     return self;
 }
 
+- (void)setSegmentOnAtIndex:(NSInteger)index;
+{
+    [self.segmentControl setSelectedSegmentIndex:index];
+}
+
 - (void)segmentSelected
 {
     if (self.delegate) {

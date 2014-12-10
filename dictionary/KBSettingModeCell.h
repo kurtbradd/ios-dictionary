@@ -20,4 +20,6 @@
 
 @property (nonatomic, strong) id<SettingModeCellModeChangeProtocol>delegate;
 
+- (void)setSegmentOnAtIndex:(NSInteger)index;
+
 @end
