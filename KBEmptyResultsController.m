@@ -8,6 +8,7 @@
 
 #import "KBEmptyResultsController.h"
 #import "KBNoResultsAttributedString.h"
+#import "KBSettingsController.h"
 
 @interface KBEmptyResultsController ()
 
@@ -28,8 +29,14 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [self.navigationItem setRightBarButtonItem:[[KBSettingsButton alloc] initWithDisplayDelegate:self]];
     [self.message setAttributedText:[[KBNoResultsAttributedString alloc] initWithAttributedString:self.message.attributedText
                                                                                     andSearchTerm:self.searchString]];
 }
 
+
+- (void)presentSettingsController
+{
+    [self.navigationController pushViewController:[[KBSettingsController alloc] initWithSettingType:kMainSettings] animated:YES];
+}
 @end

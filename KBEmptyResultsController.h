@@ -8,7 +8,7 @@
 
 #import "KBViewController.h"
 
-@interface KBEmptyResultsController : KBViewController
+@interface KBEmptyResultsController : KBViewController <PresentSettingsCtrlProtocol>
 
 - (id)initWithSearchString:(NSString *)searchString;
 
