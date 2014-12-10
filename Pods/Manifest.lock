@@ -1,11 +1,11 @@
 PODS:
   - AFNetworking (2.2.1):
-    - AFNetworking/NSURLConnection (= 2.2.1)
-    - AFNetworking/NSURLSession (= 2.2.1)
-    - AFNetworking/Reachability (= 2.2.1)
-    - AFNetworking/Security (= 2.2.1)
-    - AFNetworking/Serialization (= 2.2.1)
-    - AFNetworking/UIKit (= 2.2.1)
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
   - AFNetworking/NSURLConnection (2.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
@@ -18,11 +18,14 @@ PODS:
   - AFNetworking/UIKit (2.2.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - MBProgressHUD (0.9)
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.1)
+  - MBProgressHUD (~> 0.8)
 
 SPEC CHECKSUMS:
   AFNetworking: 8dde8c8a6597ad95dac332a593c27e541bc87371
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.34.4

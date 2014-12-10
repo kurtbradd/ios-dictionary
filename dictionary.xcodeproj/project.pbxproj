@@ -12,6 +12,16 @@
 		F5076C261A30135000F61090 /* KBSearchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076C251A30135000F61090 /* KBSearchButton.m */; };
 		F5076C2A1A30151A00F61090 /* KBDictionaryTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076C291A30151A00F61090 /* KBDictionaryTitleView.m */; };
 		F5076C2E1A30160600F61090 /* KBSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076C2D1A30160600F61090 /* KBSearchTextField.m */; };
+		F519929D1A3677AD00A145D5 /* KBResultsSettingTableDataSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F519929C1A3677AD00A145D5 /* KBResultsSettingTableDataSourceDelegate.m */; };
+		F51A9CF51A3786A3006B08E3 /* KBDictionarySourcesTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51A9CF41A3786A3006B08E3 /* KBDictionarySourcesTableDataDelegate.m */; };
+		F51A9CFD1A378BB7006B08E3 /* KBDictSourcesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F51A9CFC1A378BB7006B08E3 /* KBDictSourcesCell.m */; };
+		F51A9D011A37AAD5006B08E3 /* KBUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F51A9D001A37AAD5006B08E3 /* KBUserDefaults.m */; };
+		F51A9D051A37B880006B08E3 /* KBSuperTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51A9D041A37B880006B08E3 /* KBSuperTableDataDelegate.m */; };
+		F51A9D0B1A37D5C0006B08E3 /* KBSettingsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F51A9D0A1A37D5C0006B08E3 /* KBSettingsButton.m */; };
+		F51A9D161A37DE3F006B08E3 /* KBResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51A9D141A37DE3F006B08E3 /* KBResultsController.m */; };
+		F51A9D171A37DE3F006B08E3 /* KBResultsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51A9D151A37DE3F006B08E3 /* KBResultsController.xib */; };
+		F51A9D201A37E859006B08E3 /* KBCardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F51A9D1F1A37E859006B08E3 /* KBCardViewCell.m */; };
+		F51A9D221A37E8B9006B08E3 /* KBCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51A9D211A37E8B9006B08E3 /* KBCardViewCell.xib */; };
 		F5715BF71A2E52D800610F8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5715BF61A2E52D800610F8A /* Foundation.framework */; };
 		F5715BF91A2E52D800610F8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5715BF81A2E52D800610F8A /* CoreGraphics.framework */; };
 		F5715BFB1A2E52D800610F8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5715BFA1A2E52D800610F8A /* UIKit.framework */; };
@@ -49,6 +59,7 @@
 		F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BD15181A2F9C2F006382D7 /* KBSettingOptionsCell.m */; };
 		F5BEA5CD1A30309E00613D85 /* KBAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA5CC1A30309E00613D85 /* KBAPI.m */; };
 		F5BEA5D11A30359C00613D85 /* KBKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA5D01A30359C00613D85 /* KBKeys.m */; };
+		F5C88B101A369374007E8026 /* KBSettingSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C88B0F1A369374007E8026 /* KBSettingSwitchCell.m */; };
 		F5E7D7E01A301A01002620D9 /* KBNoResultsAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +85,24 @@
 		F5076C291A30151A00F61090 /* KBDictionaryTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDictionaryTitleView.m; sourceTree = "<group>"; };
 		F5076C2C1A30160600F61090 /* KBSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSearchTextField.h; sourceTree = "<group>"; };
 		F5076C2D1A30160600F61090 /* KBSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSearchTextField.m; sourceTree = "<group>"; };
+		F519929B1A3677AD00A145D5 /* KBResultsSettingTableDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBResultsSettingTableDataSourceDelegate.h; sourceTree = "<group>"; };
+		F519929C1A3677AD00A145D5 /* KBResultsSettingTableDataSourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBResultsSettingTableDataSourceDelegate.m; sourceTree = "<group>"; };
+		F51A9CF31A3786A3006B08E3 /* KBDictionarySourcesTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBDictionarySourcesTableDataDelegate.h; sourceTree = "<group>"; };
+		F51A9CF41A3786A3006B08E3 /* KBDictionarySourcesTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDictionarySourcesTableDataDelegate.m; sourceTree = "<group>"; };
+		F51A9CFB1A378BB7006B08E3 /* KBDictSourcesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBDictSourcesCell.h; sourceTree = "<group>"; };
+		F51A9CFC1A378BB7006B08E3 /* KBDictSourcesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDictSourcesCell.m; sourceTree = "<group>"; };
+		F51A9CFF1A37AAD5006B08E3 /* KBUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBUserDefaults.h; sourceTree = "<group>"; };
+		F51A9D001A37AAD5006B08E3 /* KBUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBUserDefaults.m; sourceTree = "<group>"; };
+		F51A9D031A37B880006B08E3 /* KBSuperTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSuperTableDataDelegate.h; sourceTree = "<group>"; };
+		F51A9D041A37B880006B08E3 /* KBSuperTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSuperTableDataDelegate.m; sourceTree = "<group>"; };
+		F51A9D091A37D5C0006B08E3 /* KBSettingsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSettingsButton.h; sourceTree = "<group>"; };
+		F51A9D0A1A37D5C0006B08E3 /* KBSettingsButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSettingsButton.m; sourceTree = "<group>"; };
+		F51A9D131A37DE3F006B08E3 /* KBResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBResultsController.h; sourceTree = "<group>"; };
+		F51A9D141A37DE3F006B08E3 /* KBResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBResultsController.m; sourceTree = "<group>"; };
+		F51A9D151A37DE3F006B08E3 /* KBResultsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBResultsController.xib; sourceTree = "<group>"; };
+		F51A9D1E1A37E859006B08E3 /* KBCardViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBCardViewCell.h; sourceTree = "<group>"; };
+		F51A9D1F1A37E859006B08E3 /* KBCardViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBCardViewCell.m; sourceTree = "<group>"; };
+		F51A9D211A37E8B9006B08E3 /* KBCardViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBCardViewCell.xib; sourceTree = "<group>"; };
 		F5715BF31A2E52D800610F8A /* dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5715BF61A2E52D800610F8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5715BF81A2E52D800610F8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +154,8 @@
 		F5BEA5CC1A30309E00613D85 /* KBAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBAPI.m; sourceTree = "<group>"; };
 		F5BEA5CF1A30359C00613D85 /* KBKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBKeys.h; sourceTree = "<group>"; };
 		F5BEA5D01A30359C00613D85 /* KBKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBKeys.m; sourceTree = "<group>"; };
+		F5C88B0E1A369374007E8026 /* KBSettingSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSettingSwitchCell.h; sourceTree = "<group>"; };
+		F5C88B0F1A369374007E8026 /* KBSettingSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSettingSwitchCell.m; sourceTree = "<group>"; };
 		F5E7D7DE1A301A01002620D9 /* KBNoResultsAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNoResultsAttributedString.h; sourceTree = "<group>"; };
 		F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNoResultsAttributedString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,8 +207,10 @@
 		F5076C231A30127B00F61090 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F51A9D061A37B883006B08E3 /* SuperTableDataDelegate */,
 				F5076C221A300E4A00F61090 /* SettingsTableDataDelegate */,
-				F5BEA5CE1A3030A200613D85 /* API */,
+				F519929E1A3677B600A145D5 /* SettingsResultsDataDelegate */,
+				F51A9CF61A3786A7006B08E3 /* DictionarySourcesDataDelegate */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -207,6 +240,134 @@
 				F5076C2D1A30160600F61090 /* KBSearchTextField.m */,
 			);
 			name = "Search Text Field";
+			sourceTree = "<group>";
+		};
+		F519929E1A3677B600A145D5 /* SettingsResultsDataDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F519929B1A3677AD00A145D5 /* KBResultsSettingTableDataSourceDelegate.h */,
+				F519929C1A3677AD00A145D5 /* KBResultsSettingTableDataSourceDelegate.m */,
+			);
+			name = SettingsResultsDataDelegate;
+			sourceTree = "<group>";
+		};
+		F51A9CF61A3786A7006B08E3 /* DictionarySourcesDataDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F51A9CF31A3786A3006B08E3 /* KBDictionarySourcesTableDataDelegate.h */,
+				F51A9CF41A3786A3006B08E3 /* KBDictionarySourcesTableDataDelegate.m */,
+			);
+			name = DictionarySourcesDataDelegate;
+			sourceTree = "<group>";
+		};
+		F51A9CFE1A378BBC006B08E3 /* Dictionary Sources Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F51A9CFB1A378BB7006B08E3 /* KBDictSourcesCell.h */,
+				F51A9CFC1A378BB7006B08E3 /* KBDictSourcesCell.m */,
+			);
+			name = "Dictionary Sources Cell";
+			sourceTree = "<group>";
+		};
+		F51A9D021A37AAEC006B08E3 /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				F51A9CFF1A37AAD5006B08E3 /* KBUserDefaults.h */,
+				F51A9D001A37AAD5006B08E3 /* KBUserDefaults.m */,
+			);
+			name = "User Defaults";
+			sourceTree = "<group>";
+		};
+		F51A9D061A37B883006B08E3 /* SuperTableDataDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F51A9D031A37B880006B08E3 /* KBSuperTableDataDelegate.h */,
+				F51A9D041A37B880006B08E3 /* KBSuperTableDataDelegate.m */,
+			);
+			name = SuperTableDataDelegate;
+			sourceTree = "<group>";
+		};
+		F51A9D081A37D5A3006B08E3 /* SettingsBarButton Item */ = {
+			isa = PBXGroup;
+			children = (
+				F51A9D091A37D5C0006B08E3 /* KBSettingsButton.h */,
+				F51A9D0A1A37D5C0006B08E3 /* KBSettingsButton.m */,
+			);
+			name = "SettingsBarButton Item";
+			sourceTree = "<group>";
+		};
+		F51A9D0C1A37DB02006B08E3 /* Clear Button */ = {
+			isa = PBXGroup;
+			children = (
+				F5B578BD1A2E8A2900207322 /* clearButton@2x.png */,
+				F5B578BB1A2E899B00207322 /* clearButtonPressed@2x.png */,
+			);
+			name = "Clear Button";
+			sourceTree = "<group>";
+		};
+		F51A9D0D1A37DB09006B08E3 /* Book Empty */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5789B1A2E701800207322 /* book-empty.png */,
+				F5B5789C1A2E701800207322 /* book-empty@2x.png */,
+			);
+			name = "Book Empty";
+			sourceTree = "<group>";
+		};
+		F51A9D0E1A37DB11006B08E3 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5789D1A2E701800207322 /* book.png */,
+				F5B5789E1A2E701800207322 /* book@2x.png */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		F51A9D0F1A37DB16006B08E3 /* Chevron */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5789F1A2E701800207322 /* chevron.png */,
+				F5B578A01A2E701800207322 /* chevron@2x.png */,
+			);
+			name = Chevron;
+			sourceTree = "<group>";
+		};
+		F51A9D101A37DB1D006B08E3 /* Magnifying Glass */ = {
+			isa = PBXGroup;
+			children = (
+				F5B578A11A2E701800207322 /* magnify.png */,
+				F5B578A21A2E701800207322 /* magnify@2x.png */,
+			);
+			name = "Magnifying Glass";
+			sourceTree = "<group>";
+		};
+		F51A9D111A37DB24006B08E3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F5B578A31A2E701800207322 /* settings.png */,
+				F5B578A41A2E701800207322 /* settings@2x.png */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F51A9D121A37DE0D006B08E3 /* ResultsCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				F51A9D131A37DE3F006B08E3 /* KBResultsController.h */,
+				F51A9D141A37DE3F006B08E3 /* KBResultsController.m */,
+				F51A9D151A37DE3F006B08E3 /* KBResultsController.xib */,
+			);
+			name = ResultsCtrl;
+			sourceTree = "<group>";
+		};
+		F51A9D1D1A37E393006B08E3 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				F51A9D1E1A37E859006B08E3 /* KBCardViewCell.h */,
+				F51A9D1F1A37E859006B08E3 /* KBCardViewCell.m */,
+				F51A9D211A37E8B9006B08E3 /* KBCardViewCell.xib */,
+			);
+			name = CardView;
 			sourceTree = "<group>";
 		};
 		F5715BEA1A2E52D800610F8A = {
@@ -246,12 +407,12 @@
 			children = (
 				F5B578951A2E5ABB00207322 /* Helpers */,
 				F5076C231A30127B00F61090 /* Models */,
-				F5B5789A1A2E701800207322 /* Assets */,
 				F5BD151B1A2F9C41006382D7 /* Views */,
 				F5B5788C1A2E55D800207322 /* View Controllers */,
 				F5715C051A2E52D800610F8A /* KBAppDelegate.h */,
 				F5715C061A2E52D800610F8A /* KBAppDelegate.m */,
 				F5715C081A2E52D800610F8A /* Images.xcassets */,
+				F5B5789A1A2E701800207322 /* Assets */,
 				F5715BFD1A2E52D800610F8A /* Supporting Files */,
 			);
 			path = dictionary;
@@ -308,23 +469,24 @@
 		F5B5788C1A2E55D800207322 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F5B578901A2E594300207322 /* Navigation Ctrl */,
+				F5B578901A2E594300207322 /* NavigationCtrl */,
 				F5B5788B1A2E55CB00207322 /* SearchCtrl */,
 				F5B578B51A2E718300207322 /* SettingsCtrl */,
 				F5B578991A2E681900207322 /* View Controller */,
-				F5B578C41A2E9C3E00207322 /* EmptyResults Controller */,
+				F51A9D121A37DE0D006B08E3 /* ResultsCtrl */,
+				F5B578C41A2E9C3E00207322 /* EmptyResultsCtrl */,
 			);
 			name = "View Controllers";
 			path = ..;
 			sourceTree = "<group>";
 		};
-		F5B578901A2E594300207322 /* Navigation Ctrl */ = {
+		F5B578901A2E594300207322 /* NavigationCtrl */ = {
 			isa = PBXGroup;
 			children = (
 				F5B5788D1A2E594000207322 /* KBNavController.h */,
 				F5B5788E1A2E594000207322 /* KBNavController.m */,
 			);
-			name = "Navigation Ctrl";
+			name = NavigationCtrl;
 			sourceTree = "<group>";
 		};
 		F5B578941A2E5AAD00207322 /* Style Manager */ = {
@@ -339,7 +501,10 @@
 		F5B578951A2E5ABB00207322 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F5BEA5CE1A3030A200613D85 /* API */,
+				F5BEA5D21A30359F00613D85 /* Keys */,
 				F5B578941A2E5AAD00207322 /* Style Manager */,
+				F51A9D021A37AAEC006B08E3 /* User Defaults */,
 			);
 			name = Helpers;
 			path = ..;
@@ -357,18 +522,12 @@
 		F5B5789A1A2E701800207322 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F5B578BD1A2E8A2900207322 /* clearButton@2x.png */,
-				F5B578BB1A2E899B00207322 /* clearButtonPressed@2x.png */,
-				F5B5789B1A2E701800207322 /* book-empty.png */,
-				F5B5789C1A2E701800207322 /* book-empty@2x.png */,
-				F5B5789D1A2E701800207322 /* book.png */,
-				F5B5789E1A2E701800207322 /* book@2x.png */,
-				F5B5789F1A2E701800207322 /* chevron.png */,
-				F5B578A01A2E701800207322 /* chevron@2x.png */,
-				F5B578A11A2E701800207322 /* magnify.png */,
-				F5B578A21A2E701800207322 /* magnify@2x.png */,
-				F5B578A31A2E701800207322 /* settings.png */,
-				F5B578A41A2E701800207322 /* settings@2x.png */,
+				F51A9D0C1A37DB02006B08E3 /* Clear Button */,
+				F51A9D0D1A37DB09006B08E3 /* Book Empty */,
+				F51A9D0E1A37DB11006B08E3 /* Book */,
+				F51A9D0F1A37DB16006B08E3 /* Chevron */,
+				F51A9D101A37DB1D006B08E3 /* Magnifying Glass */,
+				F51A9D111A37DB24006B08E3 /* Settings */,
 			);
 			name = Assets;
 			path = png;
@@ -384,14 +543,14 @@
 			name = SettingsCtrl;
 			sourceTree = "<group>";
 		};
-		F5B578C41A2E9C3E00207322 /* EmptyResults Controller */ = {
+		F5B578C41A2E9C3E00207322 /* EmptyResultsCtrl */ = {
 			isa = PBXGroup;
 			children = (
 				F5B578BF1A2E9C3000207322 /* KBEmptyResultsController.h */,
 				F5B578C01A2E9C3000207322 /* KBEmptyResultsController.m */,
 				F5B578C11A2E9C3000207322 /* KBEmptyResultsController.xib */,
 			);
-			name = "EmptyResults Controller";
+			name = EmptyResultsCtrl;
 			sourceTree = "<group>";
 		};
 		F5BD151A1A2F9C35006382D7 /* Setting Options Cell */ = {
@@ -406,12 +565,16 @@
 		F5BD151B1A2F9C41006382D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F5BD151A1A2F9C35006382D7 /* Setting Options Cell */,
+				F51A9D081A37D5A3006B08E3 /* SettingsBarButton Item */,
+				F51A9CFE1A378BBC006B08E3 /* Dictionary Sources Cell */,
+				F5C88B121A369381007E8026 /* Setting Switch Cell */,
 				F5B0B5271A2FA09C002C580E /* Setting Mode Cell */,
+				F5BD151A1A2F9C35006382D7 /* Setting Options Cell */,
 				F5076C271A30135800F61090 /* Search Button */,
 				F5076C2B1A30151D00F61090 /* Dictionary Title View */,
 				F5076C2F1A30160A00F61090 /* Search Text Field */,
 				F5E7D7E11A301A06002620D9 /* No Results Attributed String */,
+				F51A9D1D1A37E393006B08E3 /* CardView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -421,9 +584,9 @@
 			children = (
 				F5BEA5CB1A30309E00613D85 /* KBAPI.h */,
 				F5BEA5CC1A30309E00613D85 /* KBAPI.m */,
-				F5BEA5D21A30359F00613D85 /* Keys */,
 			);
 			name = API;
+			path = dictionary;
 			sourceTree = "<group>";
 		};
 		F5BEA5D21A30359F00613D85 /* Keys */ = {
@@ -433,6 +596,16 @@
 				F5BEA5D01A30359C00613D85 /* KBKeys.m */,
 			);
 			name = Keys;
+			path = dictionary;
+			sourceTree = "<group>";
+		};
+		F5C88B121A369381007E8026 /* Setting Switch Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F5C88B0E1A369374007E8026 /* KBSettingSwitchCell.h */,
+				F5C88B0F1A369374007E8026 /* KBSettingSwitchCell.m */,
+			);
+			name = "Setting Switch Cell";
 			sourceTree = "<group>";
 		};
 		F5E7D7E11A301A06002620D9 /* No Results Attributed String */ = {
@@ -529,12 +702,14 @@
 				F5B578A81A2E701800207322 /* book@2x.png in Resources */,
 				F5B578C31A2E9C3000207322 /* KBEmptyResultsController.xib in Resources */,
 				F5B578BE1A2E8A2900207322 /* clearButton@2x.png in Resources */,
+				F51A9D171A37DE3F006B08E3 /* KBResultsController.xib in Resources */,
 				F5B578A51A2E701800207322 /* book-empty.png in Resources */,
 				F5B578AB1A2E701800207322 /* magnify.png in Resources */,
 				F5B578A91A2E701800207322 /* chevron.png in Resources */,
 				F5B578AA1A2E701800207322 /* chevron@2x.png in Resources */,
 				F5B578A71A2E701800207322 /* book.png in Resources */,
 				F5715C011A2E52D800610F8A /* InfoPlist.strings in Resources */,
+				F51A9D221A37E8B9006B08E3 /* KBCardViewCell.xib in Resources */,
 				F5B578BA1A2E71AB00207322 /* KBSettingsController.xib in Resources */,
 				F5B5788A1A2E55C200207322 /* KBSearchController.xib in Resources */,
 				F5B578BC1A2E899B00207322 /* clearButtonPressed@2x.png in Resources */,
@@ -591,7 +766,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BEA5D11A30359C00613D85 /* KBKeys.m in Sources */,
+				F51A9CF51A3786A3006B08E3 /* KBDictionarySourcesTableDataDelegate.m in Sources */,
 				F5B578B11A2E70E300207322 /* KBStyleManager.m in Sources */,
+				F51A9D011A37AAD5006B08E3 /* KBUserDefaults.m in Sources */,
 				F5715C031A2E52D800610F8A /* main.m in Sources */,
 				F5076C2E1A30160600F61090 /* KBSearchTextField.m in Sources */,
 				F5076C261A30135000F61090 /* KBSearchButton.m in Sources */,
@@ -601,12 +778,19 @@
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
 				F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */,
 				F5BEA5CD1A30309E00613D85 /* KBAPI.m in Sources */,
+				F51A9D201A37E859006B08E3 /* KBCardViewCell.m in Sources */,
+				F51A9D161A37DE3F006B08E3 /* KBResultsController.m in Sources */,
 				F5B0B52F1A2FA375002C580E /* KBSettingModeCell.m in Sources */,
 				F5B578981A2E681500207322 /* KBViewController.m in Sources */,
 				F5715C071A2E52D800610F8A /* KBAppDelegate.m in Sources */,
 				F5B578C21A2E9C3000207322 /* KBEmptyResultsController.m in Sources */,
+				F51A9D051A37B880006B08E3 /* KBSuperTableDataDelegate.m in Sources */,
 				F5E7D7E01A301A01002620D9 /* KBNoResultsAttributedString.m in Sources */,
+				F51A9CFD1A378BB7006B08E3 /* KBDictSourcesCell.m in Sources */,
 				F5076C211A300E3B00F61090 /* KBSettingsTableView.m in Sources */,
+				F519929D1A3677AD00A145D5 /* KBResultsSettingTableDataSourceDelegate.m in Sources */,
+				F5C88B101A369374007E8026 /* KBSettingSwitchCell.m in Sources */,
+				F51A9D0B1A37D5C0006B08E3 /* KBSettingsButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +911,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dictionary/dictionary-Prefix.pch";
 				INFOPLIST_FILE = "dictionary/dictionary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -741,6 +926,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dictionary/dictionary-Prefix.pch";
 				INFOPLIST_FILE = "dictionary/dictionary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -762,6 +948,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "dictionaryTests/dictionaryTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -780,6 +967,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dictionary/dictionary-Prefix.pch";
 				INFOPLIST_FILE = "dictionaryTests/dictionaryTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

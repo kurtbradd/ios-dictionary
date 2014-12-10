@@ -15,4 +15,6 @@
     #import <Foundation/Foundation.h>
     #import "KBStyleManager.h"
     #import "KBViewController.h"
+    #import "KBSuperTableDataDelegate.h"
+    #import "KBUserDefaults.h"
 #endif
