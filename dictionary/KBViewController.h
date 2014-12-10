@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KBSettingsButton.h"
 
 @interface KBViewController : UIViewController
 
