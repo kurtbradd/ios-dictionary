@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KBSearchController : KBViewController <UITextFieldDelegate>
+@interface KBSearchController : KBViewController <UITextFieldDelegate,PresentSettingsCtrlProtocol>
 
 @end
