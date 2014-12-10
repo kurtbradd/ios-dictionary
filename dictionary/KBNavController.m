@@ -7,6 +7,7 @@
 //
 
 #import "KBNavController.h"
+#import "KBSettingsController.h"
 
 @interface KBNavController ()
 
