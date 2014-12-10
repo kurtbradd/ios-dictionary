@@ -7,6 +7,9 @@
 //
 
 #import "KBSettingsTableView.h"
+#import "KBSettingsController.h"
+#import "KBResultsSettingTableDataSourceDelegate.h"
+#import "KBDictionarySourcesTableDataDelegate.h"
 
 @interface KBSettingsTableView ()
 
@@ -17,7 +20,7 @@
 
 @implementation KBSettingsTableView
 
-- (instancetype)initWithDelegate:(id<SettingModeCellModeChangeProtocol>)delegate
+- (instancetype)initWithCellDelegate:(id<SettingModeCellModeChangeProtocol>)delegate;
 {
     if (self = [super init]) {
         self.delegate = delegate;
@@ -46,17 +49,19 @@
     NSString *class = (indexPath.section == 0)?(@"KBSettingOptionsCell"):(@"KBSettingModeCell");
     UITableViewCell *cell = [[NSClassFromString(class) alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     [cell.textLabel setText:[[self.options[indexPath.section] valueForKey:@"options"] objectAtIndex:indexPath.row]];
-    if (indexPath.section == 1) [(KBSettingModeCell*)cell setDelegate:self.delegate];
+    if (indexPath.section == 1) {
+        [(KBSettingModeCell*)cell setSegmentOnAtIndex:1]; //default to night-mode off
+        [(KBSettingModeCell*)cell setDelegate:self.delegate];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
+    SettingControllerType type = (indexPath.row == 0)?(kResultSettings):(kSourceSettings);
+    KBSettingsController *ctrl = [[KBSettingsController alloc] initWithSettingType:type];
+    [[(UIViewController *)self.delegate navigationController] pushViewController:ctrl animated:YES];
 }
-
-
-
-
 
 @end

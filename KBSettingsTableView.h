@@ -10,8 +10,8 @@
 #import "KBSettingOptionsCell.h"
 #import "KBSettingModeCell.h"
 
-@interface KBSettingsTableView : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface KBSettingsTableView : KBSuperTableDataDelegate
 
-- (instancetype)initWithDelegate:(id<SettingModeCellModeChangeProtocol>)delegate;
+- (instancetype)initWithCellDelegate:(id<SettingModeCellModeChangeProtocol>)delegate;
 
 @end
