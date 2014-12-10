@@ -10,4 +10,7 @@
 
 @interface KBAPI : NSObject
 
+- (void)searchForWord:(NSString *)word
+withCompletionHandler:(void(^)(id response, NSError *error))handler;
+
 @end

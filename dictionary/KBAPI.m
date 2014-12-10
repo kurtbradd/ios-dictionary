@@ -8,6 +8,10 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import "KBAPI.h"
+#import "KBKeys.h"
+
+NSString *const wordnikApi = @"http://api.wordnik.com:80/v4/word.json";
+NSString *const wordnikDefinitionEndpoint = @"definitions";
 
 @interface KBAPI ()
 
@@ -36,9 +40,10 @@
 - (void)searchForWord:(NSString *)word
 withCompletionHandler:(void(^)(id response, NSError *error))handler
 {
+    NSString *url = [NSString stringWithFormat:@"%@/%@/%@", wordnikApi, word, wordnikDefinitionEndpoint];
     AFHTTPRequestOperation *op =
-    [self GETOperationWithURLString:@""
-                         parameters:nil
+    [self GETOperationWithURLString:url
+                         parameters:[self baseQueryParams]
                             success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                 if (handler) handler(responseObject, nil);
                             }
@@ -62,4 +67,32 @@ withCompletionHandler:(void(^)(id response, NSError *error))handler
     [operation setCompletionBlockWithSuccess:success failure:failure];
     return operation;
 }
+
+- (NSMutableDictionary *)baseQueryParams
+{
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    [params setValue:@"200" forKey:@"limit"];
+    [params setValue:@"false" forKey:@"includeRelated"];
+    [params setValue:@"wiktionary" forKey:@"sourceDictionaries"];
+    [params setValue:@"true" forKey:@"useCanonical"];
+    [params setValue:@"false" forKey:@"includeTags"];
+    [params setValue:kWordnik forKey:@"api_key"];
+    return params;
+}
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
