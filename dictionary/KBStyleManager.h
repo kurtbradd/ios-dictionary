@@ -29,4 +29,7 @@
 + (UIFont *)helvetivaLightWithSize:(CGFloat)size;
 + (UIFont *)helvetivaBoldWithSize:(CGFloat)size;
 
+#pragma mark - Sizes
++ (CGSize)definitionCardSize;
+
 @end
