@@ -8,7 +8,7 @@
 
 #import "KBViewController.h"
 
-@interface KBResultsController : KBViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface KBResultsController : KBViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate, PresentSettingsCtrlProtocol>
 
 - (instancetype)initSearchWord:(NSString *)word withResults:(NSDictionary *)results;
 

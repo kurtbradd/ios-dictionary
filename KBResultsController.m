@@ -8,12 +8,14 @@
 
 #import "KBResultsController.h"
 #import "KBCardViewCell.h"
+#import "KBSettingsController.h"
 
 @interface KBResultsController ()
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSString *searchWord;
 @property (nonatomic, strong) NSDictionary *results;
+@property (nonatomic, strong) UIPageControl *pageCtrl;
 
 @end
 
@@ -26,9 +28,22 @@
         self.title = @"Results";
         self.searchWord = word;
         [self.collectionView setBackgroundColor:[KBStyleManager grayBackgroundColor]];
+        NSLog(@"%@", results);
         self.results = results;
     }
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.navigationItem setRightBarButtonItem:[[KBSettingsButton alloc] initWithDisplayDelegate:self]];
+}
+
+- (void)presentSettingsController
+{
+    [self.view endEditing:YES];
+    [self.navigationController pushViewController:[[KBSettingsController alloc] initWithSettingType:kMainSettings] animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -39,12 +54,25 @@
     [flowLayout setMinimumLineSpacing:15.0];
     [self.collectionView setCollectionViewLayout:flowLayout];
     
-    
     UILabel *word = [[UILabel alloc] initWithFrame:CGRectMake(25, 0, 295, 73)];
     [word setFont:[KBStyleManager helvetivaBoldWithSize:33.0]];
     [word setTextColor:[KBStyleManager grayTextRegularColor]];
     [word setText:[self.searchWord capitalizedString]];
     [self.view addSubview:word];
+    
+    [self setPageCtrl:[[UIPageControl alloc]init]];
+    CGRect frame = self.pageCtrl.frame;
+    frame.origin.x = 160;
+    frame.origin.y = 480;
+    [self.pageCtrl setFrame:frame];
+    [self.pageCtrl setHidesForSinglePage:YES];
+    [self.pageCtrl setCurrentPage:0];
+    [self.pageCtrl setPageIndicatorTintColor:[KBStyleManager grayIconColor]];
+    [self.pageCtrl setCurrentPageIndicatorTintColor:[KBStyleManager grayTextRegularColor]];
+    [self.pageCtrl setNumberOfPages:[self.results allKeys].count];
+    [self.view insertSubview:self.pageCtrl aboveSubview:self.collectionView];
+//    [self.view insertSubview:self.pageCtrl atIndex:0];
+    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -56,8 +84,8 @@
 {
     KBCardViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"KBCardViewCell" forIndexPath:indexPath];
     NSString *wordType = [[self.results allKeys] objectAtIndex:indexPath.row];
-    [cell.titleLabel setText:[wordType capitalizedString]];
     [cell.wordType setText:[wordType capitalizedString]];
+    [cell setWordDefinitions:[self.results objectForKey:wordType]];
     return cell;
 }
 
@@ -71,6 +99,12 @@
     CGFloat horizontalInset = (collectionView.frame.size.width - 260)/2.0;
     //    bottom inset of 64min to make up for status bar
     return UIEdgeInsetsMake(0, horizontalInset,94, horizontalInset);
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSInteger currentIndex = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
+//    [self.pageCtrl setCurrentPage:currentIndex];
 }
 
 @end
