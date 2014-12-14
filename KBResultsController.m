@@ -71,8 +71,6 @@
     [self.pageCtrl setCurrentPageIndicatorTintColor:[KBStyleManager grayTextRegularColor]];
     [self.pageCtrl setNumberOfPages:[self.results allKeys].count];
     [self.view insertSubview:self.pageCtrl aboveSubview:self.collectionView];
-//    [self.view insertSubview:self.pageCtrl atIndex:0];
-    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -104,7 +102,10 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     NSInteger currentIndex = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
-//    [self.pageCtrl setCurrentPage:currentIndex];
+    NSLog(@"%ld", (long)currentIndex);
+    NSNumber *idx = [NSNumber numberWithInteger:currentIndex];
+    idx = [NSNumber numberWithFloat:roundf(idx.floatValue)];
+    [self.pageCtrl setCurrentPage:idx.integerValue];
 }
 
 @end

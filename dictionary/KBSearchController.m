@@ -15,11 +15,15 @@
 #import "KBAPI.h"
 #import "MBProgressHUD.h"
 #import "KBResultsController.h"
+#import "KBAppDelegate.h"
+#import "KBUserDefaults.h"
 
 @interface KBSearchController ()
 
-@property (weak, nonatomic) IBOutlet KBSearchTextField *searchText;
-@property (weak, nonatomic) IBOutlet KBSearchButton *searchButton;
+@property (nonatomic, weak) IBOutlet KBSearchTextField *searchText;
+@property (nonatomic, weak) IBOutlet KBSearchButton *searchButton;
+@property (nonatomic, strong) IBOutlet UILabel *nightModeLabel;
+@property (nonatomic, strong) IBOutlet UILabel *dictionarySourceLabel;
 @property (nonatomic, strong) KBAPI *api;
 
 @end
@@ -43,9 +47,28 @@
     [self.navigationController pushViewController:[[KBSettingsController alloc] initWithSettingType:kMainSettings] animated:YES];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    KBUserDefaults *userDefaults = [(KBAppDelegate*)[[UIApplication sharedApplication] delegate] userDefaults];
+    NSString *source = [NSString stringWithFormat:@"Dictionary Source: %@", [userDefaults getDefaultDictionarySource]];
+    [self.dictionarySourceLabel setText:source];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    CGFloat fontSize = 12.0;
+    [self.dictionarySourceLabel setFont:[KBStyleManager helvetivaBoldWithSize:fontSize]];
+    [self.dictionarySourceLabel setTextColor:[KBStyleManager grayTextRegularColor]];
+    [self.dictionarySourceLabel sizeToFit];
+    
+    [self.nightModeLabel setText:@"Night Mode: Off"];
+    [self.nightModeLabel setFont:[KBStyleManager helvetivaBoldWithSize:fontSize]];
+    [self.nightModeLabel setTextColor:[KBStyleManager grayTextRegularColor]];
+    [self.nightModeLabel sizeToFit];
+    
     [self.navigationItem setTitleView:[[KBDictionaryTitleView alloc] init]];
     [self.navigationItem setRightBarButtonItem:[[KBSettingsButton alloc] initWithDisplayDelegate:self]];
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self.view

@@ -26,8 +26,10 @@ NSString *const kSource = @"source";
 - (instancetype)init
 {
     if (self = [super init]){
-        NSLog(@"init");
         _defaultGrammars = [[NSMutableDictionary alloc] init];
+        [_defaultGrammars setObject:@"Adjective" forKey:@"Adjective"];
+        [_defaultGrammars setObject:@"Adverb" forKey:@"Adverb"];
+        _defaultDictionarySource = @"Dictionary.com";
     }
     return self;
 }
