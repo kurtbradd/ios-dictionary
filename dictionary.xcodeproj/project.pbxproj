@@ -35,6 +35,7 @@
 		F5715C1A1A2E52D800610F8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5715C181A2E52D800610F8A /* InfoPlist.strings */; };
 		F5715C1C1A2E52D800610F8A /* dictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5715C1B1A2E52D800610F8A /* dictionaryTests.m */; };
 		F5B0B52F1A2FA375002C580E /* KBSettingModeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B0B52E1A2FA375002C580E /* KBSettingModeCell.m */; };
+		F5B2F33B1A3CF52600946092 /* KBDefinitionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B2F3391A3CF52600946092 /* KBDefinitionTableCell.m */; };
 		F5B578891A2E55C200207322 /* KBSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B578871A2E55C200207322 /* KBSearchController.m */; };
 		F5B5788A1A2E55C200207322 /* KBSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B578881A2E55C200207322 /* KBSearchController.xib */; };
 		F5B5788F1A2E594000207322 /* KBNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5788E1A2E594000207322 /* KBNavController.m */; };
@@ -121,6 +122,8 @@
 		F5715C1B1A2E52D800610F8A /* dictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dictionaryTests.m; sourceTree = "<group>"; };
 		F5B0B52D1A2FA375002C580E /* KBSettingModeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSettingModeCell.h; sourceTree = "<group>"; };
 		F5B0B52E1A2FA375002C580E /* KBSettingModeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSettingModeCell.m; sourceTree = "<group>"; };
+		F5B2F3381A3CF52600946092 /* KBDefinitionTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBDefinitionTableCell.h; sourceTree = "<group>"; };
+		F5B2F3391A3CF52600946092 /* KBDefinitionTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDefinitionTableCell.m; sourceTree = "<group>"; };
 		F5B578861A2E55C200207322 /* KBSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBSearchController.h; path = dictionary/KBSearchController.h; sourceTree = "<group>"; };
 		F5B578871A2E55C200207322 /* KBSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBSearchController.m; path = dictionary/KBSearchController.m; sourceTree = "<group>"; };
 		F5B578881A2E55C200207322 /* KBSearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBSearchController.xib; path = dictionary/KBSearchController.xib; sourceTree = "<group>"; };
@@ -456,6 +459,15 @@
 			name = "Setting Mode Cell";
 			sourceTree = "<group>";
 		};
+		F5B2F33D1A3CF52A00946092 /* Definition Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F5B2F3381A3CF52600946092 /* KBDefinitionTableCell.h */,
+				F5B2F3391A3CF52600946092 /* KBDefinitionTableCell.m */,
+			);
+			name = "Definition Cell";
+			sourceTree = "<group>";
+		};
 		F5B5788B1A2E55CB00207322 /* SearchCtrl */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +587,7 @@
 				F5076C2F1A30160A00F61090 /* Search Text Field */,
 				F5E7D7E11A301A06002620D9 /* No Results Attributed String */,
 				F51A9D1D1A37E393006B08E3 /* CardView */,
+				F5B2F33D1A3CF52A00946092 /* Definition Cell */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -775,6 +788,7 @@
 				F5B578891A2E55C200207322 /* KBSearchController.m in Sources */,
 				F5B578B91A2E71AB00207322 /* KBSettingsController.m in Sources */,
 				F5076C2A1A30151A00F61090 /* KBDictionaryTitleView.m in Sources */,
+				F5B2F33B1A3CF52600946092 /* KBDefinitionTableCell.m in Sources */,
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
 				F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */,
 				F5BEA5CD1A30309E00613D85 /* KBAPI.m in Sources */,
