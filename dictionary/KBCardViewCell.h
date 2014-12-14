@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KBCardViewCell : UICollectionViewCell
+@interface KBCardViewCell : UICollectionViewCell <UITableViewDelegate, UITableViewDelegate>
 
-@property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UIView *innerCard;
 @property (strong, nonatomic) IBOutlet UILabel *wordType;
+@property (strong, nonatomic) IBOutlet UITableView *definitions;
+@property (strong, nonatomic) NSArray *wordDefinitions;
 
 @end

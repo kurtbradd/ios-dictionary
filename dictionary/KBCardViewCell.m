@@ -7,12 +7,10 @@
 //
 
 #import "KBCardViewCell.h"
+#import "KBDefinitionTableCell.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface KBCardViewCell ()
-//@property (strong, nonatomic) IBOutlet UIView *innerCard;
-//@property (strong, nonatomic) IBOutlet UILabel *wordType;
-
 @end
 
 @implementation KBCardViewCell
@@ -50,11 +48,40 @@
     [self.wordType setTextColor:[KBStyleManager grayTextDarkColor]];
     [self.wordType setFont:[KBStyleManager helvetivaBoldWithSize:24.0]];
     
-    
     CALayer *bottomBorder = [CALayer layer];
     bottomBorder.frame = CGRectMake(0.0f, self.wordType.frame.size.height - 1, self.wordType.frame.size.width, 1.0f);
     [bottomBorder setBackgroundColor:[KBStyleManager grayIconColor].CGColor];
     [self.wordType.layer addSublayer:bottomBorder];
+    [self.definitions registerClass:[KBDefinitionTableCell class] forCellReuseIdentifier:@"KBDefinitionTableCell"];
+}
+
+- (void)setWordDefinitions:(NSArray *)wordDefinitions
+{
+    _wordDefinitions = wordDefinitions;
+    [self.definitions reloadData];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.wordDefinitions.count;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *def = [NSString stringWithFormat:@"%ld. %@", indexPath.row+1 ,self.wordDefinitions[indexPath.row]];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 220, 0)];
+    [label setFont:[KBStyleManager helvetivaWithSize:15.0]];
+    [label setText:def];
+    [label setNumberOfLines:0];
+    [label sizeToFit];
+    return label.frame.size.height + 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *def = [NSString stringWithFormat:@"%ld. %@", indexPath.row+1 ,self.wordDefinitions[indexPath.row]];
+    KBDefinitionTableCell * cell = [[KBDefinitionTableCell alloc] initWithDefinitionText:def];
+    return cell;
 }
 
 @end
