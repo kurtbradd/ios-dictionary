@@ -68,7 +68,7 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *def = [NSString stringWithFormat:@"%ld. %@", indexPath.row+1 ,self.wordDefinitions[indexPath.row]];
+    NSString *def = [NSString stringWithFormat:@"%d. %@", indexPath.row+1 ,self.wordDefinitions[indexPath.row]];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 220, 0)];
     [label setFont:[KBStyleManager helvetivaWithSize:15.0]];
     [label setText:def];
@@ -79,7 +79,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *def = [NSString stringWithFormat:@"%ld. %@", indexPath.row+1 ,self.wordDefinitions[indexPath.row]];
+    NSString *def = [NSString stringWithFormat:@"%d. %@", indexPath.row+1 ,self.wordDefinitions[indexPath.row]];
     KBDefinitionTableCell * cell = [[KBDefinitionTableCell alloc] initWithDefinitionText:def];
     return cell;
 }

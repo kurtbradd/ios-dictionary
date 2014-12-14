@@ -7,6 +7,7 @@
 //
 
 #import "KBResultsSettingTableDataSourceDelegate.h"
+#import "KBAppDelegate.h"
 
 @interface KBResultsSettingTableDataSourceDelegate ()
 
@@ -21,7 +22,7 @@
 - (instancetype)initWithCellDelegate:(id<SettingSwitchCellValueChangeProtocol>)delegate
 {
     if (self = [super init]) {
-        self.settings = [[KBUserDefaults alloc]init];
+        self.settings = [(KBAppDelegate*)[[UIApplication sharedApplication] delegate] userDefaults];
         self.options = @[@"Adjective", @"Adverb",@"Verb", @"Noun", @"Idiom"];
         self.delegate = delegate;
     }

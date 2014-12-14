@@ -8,6 +8,7 @@
 
 #import "KBDictionarySourcesTableDataDelegate.h"
 #import "KBUserDefaults.h"
+#import "KBAppDelegate.h"
 
 @interface KBDictionarySourcesTableDataDelegate ()
 
@@ -24,7 +25,7 @@
 - (instancetype)initWithCellDelegate:(id<DictionarySourceChangeProtocol>)delegate
 {
     if (self = [super init]) {
-        self.settings = [[KBUserDefaults alloc] init];
+        self.settings = [(KBAppDelegate*)[[UIApplication sharedApplication] delegate] userDefaults];;
         self.options = @[@"Dictionary.com", @"Merriam-Webster",@"Oxford", @"The Free Dictionary", @"Cambridge Dictionary"];
         if (![self.settings getDefaultDictionarySource]) [self.settings setDefaultDictionarySource:self.options[1]];
         self.selectedIndex = [self.options indexOfObject:[self.settings getDefaultDictionarySource]];

@@ -16,6 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.userDefaults = [[KBUserDefaults alloc] init];
     KBNavController *navController = [[KBNavController alloc] initWithRootViewController:[[KBSearchController alloc]init]];
     [self.window setRootViewController:navController];
     self.window.backgroundColor = [UIColor whiteColor];

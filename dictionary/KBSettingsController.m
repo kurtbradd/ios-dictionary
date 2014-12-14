@@ -13,6 +13,7 @@
 #import "KBResultsSettingTableDataSourceDelegate.h"
 #import "KBDictionarySourcesTableDataDelegate.h"
 #import "KBUserDefaults.h"
+#import "KBAppDelegate.h"
 
 @interface KBSettingsController ()
 
@@ -29,7 +30,7 @@
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
         self.title = title;
-        self.settings = [[KBUserDefaults alloc] init];
+        self.settings = [(KBAppDelegate*)[[UIApplication sharedApplication] delegate] userDefaults];
         self.tableDataSourceAndDelegate = [[NSClassFromString(sourceClass) alloc] initWithCellDelegate:self];
         self.tableView.dataSource = self.tableDataSourceAndDelegate;
         self.tableView.delegate = self.tableDataSourceAndDelegate;

@@ -58,7 +58,7 @@
         return [self displayErrorWithMessage:@"No Search Text :("];
     }    
     [self.view endEditing:YES];
-    NSString *searchWord = self.searchText.text;
+    NSString *searchWord = [[[self.searchText.text componentsSeparatedByString:@" "] objectAtIndex:0] stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSMutableDictionary *results = [[NSMutableDictionary alloc] init];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 

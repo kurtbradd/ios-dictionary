@@ -12,20 +12,24 @@
 	<dict>
 		<key>2C1147F5-D646-4A67-8C47-8162DFB2D531</key>
 		<string>https://github.com/kurtbradd/ios-dictionary.git</string>
+		<key>CDC1A95A948629998467799EA1F157B0A3A92869</key>
+		<string>https://github.com/kurtbradd/ios-dictionary.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>dictionary.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2C1147F5-D646-4A67-8C47-8162DFB2D531</key>
+		<string>../../dictionary</string>
+		<key>CDC1A95A948629998467799EA1F157B0A3A92869</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/kurtbradd/ios-dictionary.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2C1147F5-D646-4A67-8C47-8162DFB2D531</string>
+	<string>CDC1A95A948629998467799EA1F157B0A3A92869</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>2C1147F5-D646-4A67-8C47-8162DFB2D531</string>
 			<key>IDESourceControlWCCName</key>
 			<string>dictionary</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CDC1A95A948629998467799EA1F157B0A3A92869</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-dictionary</string>
 		</dict>
 	</array>
 </dict>

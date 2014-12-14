@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KBUserDefaults.h"
 
 @interface KBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) KBUserDefaults *userDefaults;
 
 @end
