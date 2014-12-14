@@ -9,6 +9,7 @@
 #import "KBResultsController.h"
 #import "KBCardViewCell.h"
 #import "KBSettingsController.h"
+#import "KBCardFlowLayout.h"
 
 @interface KBResultsController ()
 
@@ -49,10 +50,11 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [self.collectionView registerClass:[KBCardViewCell class] forCellWithReuseIdentifier:@"KBCardViewCell"];
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    [flowLayout setMinimumLineSpacing:15.0];
-    [self.collectionView setCollectionViewLayout:flowLayout];
+    [self.collectionView setPagingEnabled:YES];
+//    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+//    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+//    [flowLayout setMinimumLineSpacing:15.0];
+    [self.collectionView setCollectionViewLayout:[[KBCardFlowLayout alloc] init]];
     
     UILabel *word = [[UILabel alloc] initWithFrame:CGRectMake(25, 0, 295, 73)];
     [word setFont:[KBStyleManager helvetivaBoldWithSize:33.0]];
@@ -87,25 +89,22 @@
     return cell;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return [KBStyleManager definitionCardSize];
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return [KBStyleManager definitionCardSize];
+//}
+
+//- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+//{
+//    CGFloat horizontalInset = (collectionView.frame.size.width - 260)/2.0;
+//    //    bottom inset of 64min to make up for status bar + 30 for padding;
+//    return UIEdgeInsetsMake(0, horizontalInset,94, horizontalInset);
+//}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    float currentPage = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
+    self.pageCtrl.currentPage = ceil(currentPage);
 }
 
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
-    CGFloat horizontalInset = (collectionView.frame.size.width - 260)/2.0;
-    //    bottom inset of 64min to make up for status bar
-    return UIEdgeInsetsMake(0, horizontalInset,94, horizontalInset);
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    NSInteger currentIndex = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
-    NSLog(@"%ld", (long)currentIndex);
-    NSNumber *idx = [NSNumber numberWithInteger:currentIndex];
-    idx = [NSNumber numberWithFloat:roundf(idx.floatValue)];
-    [self.pageCtrl setCurrentPage:idx.integerValue];
-}
 
 @end

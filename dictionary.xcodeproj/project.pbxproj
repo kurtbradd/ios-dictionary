@@ -61,6 +61,7 @@
 		F5BEA5CD1A30309E00613D85 /* KBAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA5CC1A30309E00613D85 /* KBAPI.m */; };
 		F5BEA5D11A30359C00613D85 /* KBKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA5D01A30359C00613D85 /* KBKeys.m */; };
 		F5C88B101A369374007E8026 /* KBSettingSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C88B0F1A369374007E8026 /* KBSettingSwitchCell.m */; };
+		F5E331C61A3E1D30003A0573 /* KBCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E331C51A3E1D30003A0573 /* KBCardFlowLayout.m */; };
 		F5E7D7E01A301A01002620D9 /* KBNoResultsAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +160,8 @@
 		F5BEA5D01A30359C00613D85 /* KBKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBKeys.m; sourceTree = "<group>"; };
 		F5C88B0E1A369374007E8026 /* KBSettingSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSettingSwitchCell.h; sourceTree = "<group>"; };
 		F5C88B0F1A369374007E8026 /* KBSettingSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSettingSwitchCell.m; sourceTree = "<group>"; };
+		F5E331C41A3E1D30003A0573 /* KBCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBCardFlowLayout.h; sourceTree = "<group>"; };
+		F5E331C51A3E1D30003A0573 /* KBCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBCardFlowLayout.m; sourceTree = "<group>"; };
 		F5E7D7DE1A301A01002620D9 /* KBNoResultsAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNoResultsAttributedString.h; sourceTree = "<group>"; };
 		F5E7D7DF1A301A01002620D9 /* KBNoResultsAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNoResultsAttributedString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -588,6 +591,7 @@
 				F5E7D7E11A301A06002620D9 /* No Results Attributed String */,
 				F51A9D1D1A37E393006B08E3 /* CardView */,
 				F5B2F33D1A3CF52A00946092 /* Definition Cell */,
+				F5E331C71A3E1D33003A0573 /* Card Flow Layout */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -619,6 +623,15 @@
 				F5C88B0F1A369374007E8026 /* KBSettingSwitchCell.m */,
 			);
 			name = "Setting Switch Cell";
+			sourceTree = "<group>";
+		};
+		F5E331C71A3E1D33003A0573 /* Card Flow Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F5E331C41A3E1D30003A0573 /* KBCardFlowLayout.h */,
+				F5E331C51A3E1D30003A0573 /* KBCardFlowLayout.m */,
+			);
+			name = "Card Flow Layout";
 			sourceTree = "<group>";
 		};
 		F5E7D7E11A301A06002620D9 /* No Results Attributed String */ = {
@@ -792,6 +805,7 @@
 				F5B5788F1A2E594000207322 /* KBNavController.m in Sources */,
 				F5BD15191A2F9C2F006382D7 /* KBSettingOptionsCell.m in Sources */,
 				F5BEA5CD1A30309E00613D85 /* KBAPI.m in Sources */,
+				F5E331C61A3E1D30003A0573 /* KBCardFlowLayout.m in Sources */,
 				F51A9D201A37E859006B08E3 /* KBCardViewCell.m in Sources */,
 				F51A9D161A37DE3F006B08E3 /* KBResultsController.m in Sources */,
 				F5B0B52F1A2FA375002C580E /* KBSettingModeCell.m in Sources */,
