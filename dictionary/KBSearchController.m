@@ -58,11 +58,12 @@
 //        return [self displayErrorWithMessage:@"No Search Text :("];
 //    }    
     [self.view endEditing:YES];
-    NSString *searchWord = @"project";
+    NSString *searchWord = @"home";
     NSMutableDictionary *results = [[NSMutableDictionary alloc] init];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 
-    [self.api searchForWord:searchWord withCompletionHandler:^(id response, NSError *error) {
+    [self.api searchForWord:[searchWord lowercaseString]
+      withCompletionHandler:^(id response, NSError *error) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (error) return [self displayErrorWithMessage:@"Oops, something went wrong :/"];
         
