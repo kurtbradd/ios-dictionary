@@ -54,11 +54,11 @@
 
 - (IBAction)search:(id)sender
 {
-//    if (!self.searchText.text.length){
-//        return [self displayErrorWithMessage:@"No Search Text :("];
-//    }    
+    if (!self.searchText.text.length){
+        return [self displayErrorWithMessage:@"No Search Text :("];
+    }    
     [self.view endEditing:YES];
-    NSString *searchWord = @"home";
+    NSString *searchWord = self.searchText.text;
     NSMutableDictionary *results = [[NSMutableDictionary alloc] init];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 
