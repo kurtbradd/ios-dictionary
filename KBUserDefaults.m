@@ -18,10 +18,10 @@ NSString *const kSource = @"source";
 - (instancetype)init
 {
     if (self = [super init]){
-//        if (![[NSUserDefaults standardUserDefaults] objectForKey:kDict]){
-//            [[NSUserDefaults standardUserDefaults] setObject:[[NSMutableDictionary alloc]init] forKey:kDict];
-//            [[NSUserDefaults standardUserDefaults] synchronize];
-//        }
+        if (![[NSUserDefaults standardUserDefaults] objectForKey:kDict]){
+            [[NSUserDefaults standardUserDefaults] setObject:[[NSMutableDictionary alloc]init] forKey:kDict];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
     }
     return self;
 }
