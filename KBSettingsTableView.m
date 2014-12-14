@@ -59,9 +59,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
-    SettingControllerType type = (indexPath.row == 0)?(kResultSettings):(kSourceSettings);
-    KBSettingsController *ctrl = [[KBSettingsController alloc] initWithSettingType:type];
-    [[(UIViewController *)self.delegate navigationController] pushViewController:ctrl animated:YES];
+    if (indexPath.section == 0) {
+        SettingControllerType type = (indexPath.row == 0)?(kResultSettings):(kSourceSettings);
+        KBSettingsController *ctrl = [[KBSettingsController alloc] initWithSettingType:type];
+        [[(UIViewController *)self.delegate navigationController] pushViewController:ctrl animated:YES];
+    }
 }
 
 @end
